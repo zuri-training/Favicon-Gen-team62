@@ -39,11 +39,6 @@ REST_FRAMEWORK = {
 ]
 }
 
-SIMPLE_JWT = {
-    'ACCESS_TOKEN_LIFETIME': datetime.timedelta(days=1),
-    'REFRESH_TOKEN_LIFETIME': datetime.timedelta(days=1),
-}
-
 
 # Application definition
 
@@ -57,7 +52,6 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'Favitude'
     
 ]
 
@@ -149,6 +143,3 @@ STATIC_URL = 'static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
-AUTH_PROFILE_MODULE = 'users.MyUser'
-
-AUTH_USER_MODEL = 'users.MyUser'
