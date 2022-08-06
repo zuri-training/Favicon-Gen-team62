@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
+
+* {
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+#navbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 66px;
+  background-color: #0e5b87;
+  justify-content: space-between;
+}
+
+.navbar_logo {
+  width: 153px;
+  height: 37px;
+  margin-left: 121px;
+}
+
+.navbar1 {
+  gap: 20px;
+  align-items: center;
+  margin-right: 100px;
+}
+
+.navbar1 a {
+  color: white;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 500px;
+  font-size: 14px;
+  line-height: 23px;
+  letter-spacing: 0.0015em;
+  font-family: Roboto;
+}
+
+.navbar_avatar {
+  margin-right: 121px;
+  color: white;
+  text-decoration: none;
+  
+}
+.navbar_avatar img{
+    height: 32px;
+  width: 32px;
+}
+
+li {
+  padding: 10px;
+  list-style-type: none;
+  display: inline-block;
+}
+
+a:hover {
+  background-color: #c5e8fd;
+}
+
+.first{
+    background: linear-gradient(108.2deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0.02) 100%), url(images/firstbackground.png);
+    height: 850px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+
+.text1{
+    background: linear-gradient(97.52deg, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.1) 100%);
+    backdrop-filter: blur(50px);
+    text-align: center;
+    position: absolute;
+    margin-top: 180px;
+    margin-left: 220px;
+    margin-right: 220px;
+    padding: 40px 160px;
+}
+.text1 h2 {
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 300;
+font-size: 60px;
+line-height: 70px;
+text-align: center;
+letter-spacing: -0.005em;
+
+/* Neutral/white */
+
+color: #FFFFFF;
+
+mix-blend-mode: overlay;
+
+}
+
+.text1 h4{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 40px;
+    text-align: center;
+    letter-spacing: -0.005em;
+    
+    /* Neutral/white */
+    
+    color: #FFFFFF;
+    
+    mix-blend-mode: overlay;
+    margin-top: 140px;
+}
+
+#button1{
+padding: 10px 20px;
+gap: 8px;
+
+position: absolute;
+width: 140px;
+height: 40px;
+left: 700px;
+top: 802px;
+
+/* Primary/400 */
+
+background: #50B1E9;
+color: #FFFFFF;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 20px;
+/* M3/Elevation Light/1 */
+
+box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3), 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+border-radius: 4px;
+}

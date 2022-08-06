@@ -39,11 +39,6 @@ REST_FRAMEWORK = {
 ]
 }
 
-SIMPLE_JWT = {
-    'ACCESS_TOKEN_LIFETIME': datetime.timedelta(days=1),
-    'REFRESH_TOKEN_LIFETIME': datetime.timedelta(days=1),
-}
-
 
 # Application definition
 
@@ -57,7 +52,6 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'Favitude'
     
 ]
 
@@ -96,14 +90,11 @@ WSGI_APPLICATION = 'FaviconGen.wsgi.application'
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'FavitudeDB',
-        'USER': 'postgres',
-        'PASSWORD': 'infamousal',
-        'HOST': 'localhost',
-        'PORT': '5432',
+  'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': 'mydatabase',
     }
+
 }
 
 
@@ -149,6 +140,3 @@ STATIC_URL = 'static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
-AUTH_PROFILE_MODULE = 'users.MyUser'
-
-AUTH_USER_MODEL = 'users.MyUser'
