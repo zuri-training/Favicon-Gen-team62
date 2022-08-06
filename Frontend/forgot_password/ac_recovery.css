@@ -1,0 +1,244 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+
+:root {
+  --primary: #70c3f2;
+  --input: #a59292;
+
+  --font: "roboto", sans-serif;
+}
+
+body {
+  font-family: var(--font);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.account_recovery_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+  gap: 40px;
+
+  position: absolute;
+  width: 460px;
+  height: 501px;
+  left: 410px;
+  top: 110px;
+}
+.account_recovery_inner_container {
+  height: 60%;
+  width: 60%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.email_address{
+    display: flex;
+flex-direction: column;
+align-items: center;
+padding: 0px;
+gap: 15px;
+
+width: 311px;
+height: 145px;
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+.field{
+    display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 40px;
+
+width: 380px;
+height: 236px;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 1;
+flex-grow: 0;
+}
+.mail_icon {
+  position: absolute;
+  left: 67.71%;
+  right: 5.21%;
+  top: 9.38%;
+  bottom: 63.54%;
+
+  /* Primary/400 */
+  color: #50b1e9;
+}
+h2 {
+  width: 311px;
+  height: 40px;
+
+  /* Heading 4 / bold */
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 40px;
+  /* identical to box height */
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.0025em;
+  /* Grey/900 */
+  color: #080707;
+}
+.forgot-password-text {
+  width: 311px;
+  height: 42px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.004em;
+  color: #080707;
+}
+label {
+  width: 380px;
+  height: 16px;
+
+  /* Subtitle 2 / medium */
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.001em;
+
+  /* Grey/900 */
+  color: #080707;
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+}
+::placeholder {
+  width: 308px;
+  height: 19px;
+
+  /* Body 2 / normal */
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  /* identical to box height */
+
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.0025em;
+
+  /* Grey/500 */
+
+  color: #a59292;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 1;
+}
+.next_btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 24px;
+  gap: 10px;
+
+  width: 380px;
+  height: 40px;
+
+  /* Primary/300 */
+
+  background: #70c3f2;
+  border-radius: 4px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+a {
+  text-decoration: none;
+  height: 20px;
+  /* Button/medium */
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  display: flex;
+  text-align: center;
+  letter-spacing: 0.0125em;
+  color: #70c3f2;
+}
+input{
+    box-sizing: border-box;
+
+/* Auto layout */
+
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 16px;
+gap: 16px;
+
+width: 380px;
+height: 56px;
+
+/* Neutral/white */
+
+background: #FFFFFF;
+/* Grey/500 */
+
+border: 1px solid #A59292;
+border-radius: 4px;
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+}
+.redirect{
+    display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 10px 12px;
+gap: 8px;
+
+width: 380px;
+height: 40px;
+
+border-radius: 4px;
+
+/* Inside auto layout */
+
+flex: none;
+order: 2;
+flex-grow: 0;
+}
