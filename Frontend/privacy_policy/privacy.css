@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+:root {
+    --nav-bg: #0E5B87;
+    --main-header: #136CA0;
+    --active-btn: #50B1E9;
+
+    --font: 'roboto', sans-serif;
+}
+
+body {
+    font-family: var(--font);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/* 
+.privacy-containter {
+    
+} */
+
+.nav {
+    height: 66px;
+    width: 100%;
+
+    background: var(--nav-bg);
+    color: #fff;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 120px;
+}
+
+.nav ul {
+    width: 60%;
+
+    display: flex;
+    justify-content: space-between;
+
+    list-style: none;
+}
+
+/* .privacy-cta {
+    margin-right: 0;
+} */
+
+.privacy {
+    /* width: 40px; */
+    /* height: 20px; */
+    padding: 5px 10px;
+    font-weight: 500;
+    font-size: 14px;
+    color: #fff;
+    letter-spacing: 0.0125em;
+    background: var(--nav-bg);
+    border: 1px solid #fff;
+    outline: none;
+
+    margin-left: 10px;
+    border-radius: 4px;
+
+}
+
+.privacy:hover {
+    background: var(--active-btn);
+}
+
+header {
+    height: 200px;
+    /* width: 100%; */
+
+    background: var(--main-header);
+
+    color: #fff;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.inner-privacy-container {
+    padding: 0 120px;
+}
+
+
+
+/* body */
+section {
+    margin: 30px 0;
+    text-align: justify;
+}
+
+section > h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+section > p, ul > p {
+    padding: 5px 0;
+}
+ul {
+    margin: 5px 0;
+}
+
+ul > li {
+    list-style: none;
+    margin: 5px 0;
+}
+
+ul > ul > li {
+    list-style: none;
+    margin-left: 35px;
+}
+
+ul >li > span {
+    margin-right: 5px;
+}
+
+/* ==================== */
+footer {
+    height: 394px;
+    background: var(--main-header);
+
+}
+
+.footer-section-one > span {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+footer > .inner-privacy-container {
+    border: 1px solid red;
+    /* height: 100%; */
+    padding-top: 80px;
+
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+
+}
+
+.footer-company > ul > li, .footer-support > ul > li {
+    list-style-type: none;
+}
+
+.footer-company > ul, .footer-support > ul {
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+}
+
+.footer-company > ul > li > a, .footer-support > ul > li > a {
+    color: #fff;
+    text-decoration: none;
+}
