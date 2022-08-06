@@ -108,7 +108,7 @@ main{
 padding-right: 151px;
 }
 
-.main-text h3{
+.main-text h4{
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 700;
@@ -130,4 +130,79 @@ padding-right: 151px;
   color: #A59292;
   padding-bottom: 33px;
   width: 384px;
+}
+
+.features{
+  display: flex;
+  flex-direction: column;
+  background-color: #3aa0da;
+  padding-bottom: 151px;
+}
+
+.features h4{
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 40px;
+  letter-spacing: 0.0025em;
+  color: white;
+  padding: 80px 520px;
+
+}
+
+.feature-grid{
+  display: grid;
+  grid-template-areas: 
+  "a b"
+  "c d";
+  gap: 100px;
+  width: 80%;
+  margin: auto;
+}
+
+.grid-item-1{
+  grid-area: a;
+  display: flex;
+}
+
+.grid-item-2{
+  grid-area: b;
+  display: flex;
+}
+
+.grid-item-3{
+  grid-area: c;
+  display: flex;
+}
+
+.grid-item-4{
+  grid-area: d;
+  display: flex;
+}
+
+.feature-grid h5{
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  color: #FFFFFF;
+  padding-bottom: 24px;
+
+}
+
+.feature-grid p{
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  /* or 26px */
+  letter-spacing: 0.0015em;
+  color: #FFFFFF;
+}
+
+.text{
+  width: 285px;
 }

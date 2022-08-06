@@ -42,7 +42,10 @@
   color: white;
   text-decoration: none;
 }
-
+.navbar_avatar img{
+  height: 32px;
+width: 32px;
+}
 li {
   padding: 10px;
   list-style-type: none;
