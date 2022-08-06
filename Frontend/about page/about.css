@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
+
+* {
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+#navbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 66px;
+  background-color: #0e5b87;
+  justify-content: space-between;
+}
+
+.navbar_logo {
+  width: 153px;
+  height: 37px;
+  margin-left: 121px;
+}
+
+.navbar1 {
+  gap: 20px;
+  align-items: center;
+  margin-right: 100px;
+}
+
+.navbar1 a {
+  color: white;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 500px;
+  font-size: 14px;
+  line-height: 23px;
+  letter-spacing: 0.0015em;
+  font-family: Roboto;
+}
+
+.navbar_avatar {
+  margin-right: 121px;
+  color: white;
+  text-decoration: none;
+}
+
+li {
+  padding: 10px;
+  list-style-type: none;
+  display: inline-block;
+}
+
+a:hover {
+  background-color: #c5e8fd;
+}
+
+/* .hero img{
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+} */
+
+header{
+  height: 720px;
+  max-width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.8)), url("Images-about\about_hero.png");
+  background: url("Images-about\about_hero.png");
+  background-size: cover;
+  background: #3aa0da; /*fallback for old browsers */
+  background-repeat: no-repeat;
+}
+
+.hero-text{
+  padding: 180px 285px;
+  align-items: center ;
+  justify-content: center;
+  /* background-image: url(Images-about\about_hero.png); */
+  
+}
+
+.hero-text h1{
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 112px;
+  font-size: 96px;
+  letter-spacing: -0.015em;
+  color: white;
+  padding-bottom: 40px;
+}
+
+.hero-text p{
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px;
+  font-size: 24px;
+  color: white;
+}
+
+main{
+  display: flex;
+  padding: 120px 246px;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-image{
+padding-right: 151px;
+}
+
+.main-text h3{
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 40px;
+  letter-spacing: 0.0025em;
+  color: #DA743A;
+  padding-bottom: 33px;
+  width: 384px;
+}
+
+.main-text p{
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+  letter-spacing: 0.0015em;
+  color: #A59292;
+  padding-bottom: 33px;
+  width: 384px;
+}
