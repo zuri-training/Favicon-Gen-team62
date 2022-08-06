@@ -33,6 +33,8 @@
   font-family: Roboto;
 }
 .navbar_avatar {
+  width: 34px;
+  height: 34px;
   margin-right: 121px;
   color: white;
   text-decoration: none;
