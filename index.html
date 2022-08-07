@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css"
+    link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+</head>
+<body id="body">
+    <div id="div1">
+        <p id="p1">Sign in with</p>
+        <div id="div1a">
+            <div id="img1"><a href=""><img src="./images/facebook.png" alt="Facebook logo" width="60px" height="38px"></a></div>
+            <div id="img2"><a href=""><img src="./images/google.png" alt="Google logo" width="30px" height="30px"></a></div>
+            <div id="img3"><a href=""><img src="./images/microsoft.png" alt="Microsoft logo" width="28px" height="28px"></a></div>
+        </div>
+        <div id="div1b">
+            <div id="div1c"></div>
+            <div id="div1d"><p id="p2">or Sign in with Email</p></div>
+            <div id="div1e"></div>
+        </div>
+       <form id="form" onsubmit="return check()" novalidate>
+            <label for="Email"><p>Email Address</p> 
+                <input type="text" id="fmail" class="fields" placeholder="williamdoe@example.com" onkeyup="manageBtn(this)">
+                <div id="erroremail" class="emsg"></div>
+            </label>
+            <label for="Password"><p id="p2a">Password</p> 
+                <input type="password" class="fields" id="pass" placeholder="Min. 8 characters" required minlength="8" onkeyup="manageBtn(this)">
+                <div id="errorpass" class="emsg"></div>
+            </label>
+            <div id="div1f">
+                <div class="checkbox-rect2">
+                        <input type="checkbox" id="checkbox-rect2" name="check">
+                        <label for="checkbox-rect2">Remember me</label>
+                </div>
+            </div>
+            <div class="forgot1">
+                <a href="" id="forgot">Forgot Password?</a>
+            </div>
+            <div>
+                <button class="btn">
+                    <a href="http://127.0.0.1:5500/Frontend/homepage/homepage.html">Log In</a>
+                </button>
+            </div>
+        </form>
+        <p id="p3">Not registered yet? <a href="" id="create">Create an account</a></p>
+    </div>
+
+    <script>
+        function check () 
+        {
+            // (C1) INIT
+            var valid = true, error = "", field = "";
+
+            // (C2) NUMBER
+            field = document.getElementById("fmail");
+            error = document.getElementById("erroremail");
+            if (!field.checkValidity()) {
+                valid = false;
+                field.classList.add("err");
+                error.innerHTML = "Please use a valid email address\r\n";
+            } else {
+                field.classList.remove("err");
+                error.innerHTML = "";
+            }
+
+             // (C3) NUMBER
+             field = document.getElementById("pass");
+            error = document.getElementById("errorpass");
+            if (!field.checkValidity()) {
+                valid = false;
+                field.classList.add("err");
+                error.innerHTML = "Password must be at least 8 characters\r\n";
+            } else {
+                field.classList.remove("err");
+                error.innerHTML = "";
+            }
+
+            // (C4) RESULT
+            return valid;
+        }
+
+            function manageBtn(txt) 
+        {
+            var btn = document.getElementById('btnSubmit');
+            if (fmail.value != '' && pass.value != '') {
+            btn.disabled = false;
+            }
+            else {
+            btn.disabled = true;
+            }
+        }
+        
+    </script>
+
+</body>
+</html>
