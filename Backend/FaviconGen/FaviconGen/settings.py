@@ -44,7 +44,7 @@ REST_FRAMEWORK = {
 
 
 INSTALLED_APPS = [
-    'rest_framework',
+    
     'Favitude.apps.FavitudeConfig',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -52,6 +52,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    
     
 ]
 
@@ -91,8 +92,12 @@ WSGI_APPLICATION = 'FaviconGen.wsgi.application'
 
 DATABASES = {
   'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': 'mydatabase',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'FavitudeDB',
+        'USER': 'postgres',
+        'PASSWORD': 'infamousal',
+        'HOST': 'localhost',
+        'PORT': '5432'
     }
 
 }
@@ -126,7 +131,7 @@ TIME_ZONE = 'UTC'
 
 USE_I18N = True
 
-USE_TZ = True
+USE_TZ = False
 
 
 # Static files (CSS, JavaScript, Images)
