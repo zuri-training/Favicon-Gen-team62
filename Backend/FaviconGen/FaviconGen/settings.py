@@ -91,8 +91,12 @@ WSGI_APPLICATION = 'FaviconGen.wsgi.application'
 
 DATABASES = {
   'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': 'mydatabase',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'FavitudeDB',
+        'USER': 'postgres',
+        'PASSWORD': 'infamousal',
+        'HOST': 'localhost',
+        'PORT': '5432',
     }
 
 }
@@ -126,7 +130,7 @@ TIME_ZONE = 'UTC'
 
 USE_I18N = True
 
-USE_TZ = True
+USE_TZ = False
 
 
 # Static files (CSS, JavaScript, Images)
