@@ -11,6 +11,8 @@ https://docs.djangoproject.com/en/4.1/ref/settings/
 """
 
 from pathlib import Path
+from dotenv import load_dotenv
+import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -91,15 +93,22 @@ WSGI_APPLICATION = 'FaviconGen.wsgi.application'
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
 DATABASES = {
-  'default': {
+#   'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': os.getenv('NAME'),
+#         'USER': os.getenv('USER'),
+#         'PASSWORD': os.getenv('PASSWORD'),
+#         'HOST': os.getenv('HOST'),
+#         'PORT': os.getenv('PORT'),
+#     }
+      'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'FavitudeDB',
-        'USER': 'postgres',
-        'PASSWORD': 'infamousal',
-        'HOST': 'localhost',
-        'PORT': '5432'
+        'NAME':'FavitudeDB',
+        'USER':'postgres',
+        'PASSWORD':'@#Postgresql1',
+        'HOST':'localhost',
+        'PORT':5432
     }
-
 }
 
 

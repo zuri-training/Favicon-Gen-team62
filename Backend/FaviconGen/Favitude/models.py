@@ -22,6 +22,7 @@ class MyUserManager(BaseUserManager):
             date_of_birth=date_of_birth,
         )
 
+
         user.set_password(password)
         user.save(using=self._db)
         return user
