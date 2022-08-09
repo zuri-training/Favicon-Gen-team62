@@ -16,4 +16,7 @@ def signup_page(request):
   return render(request, 'Favitude/signup.html')  
 
 def contact_page(request):
-  return render(request, 'Favitude/contact.html')  
+  return render(request, 'Favitude/contact.html')
+
+def error_page(request):
+  return render(request, 'Favitude/error.html')      
