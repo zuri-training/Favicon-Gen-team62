@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+:root {
+    --primary: #0E5B87;
+    --input: #A59292;  
+    --btn: #E3DADA;
+    --btn-color: #615555; 
+    --font: 'roboto', sans-serif;
+
+    --nav-bg: #0E5B87;
+    --main-header: #136CA0;
+}
+
+body {
+    font-family: var(--font);
+    overflow-x: hidden;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* nav */
+.contact-nav {
+    padding: 0 120px;
+    background: var(--primary);
+}
+
+.contact-nav-container {
+    height: 66px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact-links {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 35px; 
+}
+
+.contact-links li  {
+    list-style: none;
+}
+
+.contact-links li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.contact-avatar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact-avatar :first-child {
+    cursor: pointer;
+}
+
+.contact-avatar :last-child {
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+/* header */
+header {
+    width: 100vw;
+    background: url(./assets/Rectangle\ 108.png);
+    height: 70vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.contact-header-content {
+    height: 100%;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+    flex-direction: column;
+}
+
+.contact-header-content h2 {
+    font-size: 48px;
+}
+
+.contact-header-content p {
+    font-size: 24px;
+    width: 533px;    
+    text-align: center;
+}
+
+
+/* main */
+.contact-body {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    margin: 50px auto;
+}
+
+.contact-body-container {
+    margin: 0 auto;
+}
+
+.contact-body-title {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.contact-body-title h3 {
+    font-size: 34px;
+    margin-bottom: 28px;
+}
+
+.contact-body-title p {
+    font-size: 24px;
+    margin-bottom: 80px;
+}
+
+.contact-input-container {
+    margin: 0 auto;
+    width: 80%;
+}
+
+.contact-input-innercontainer h5{
+    margin-bottom: 18px;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.contact.input-inner label {
+    font-size: 14px;
+}
+
+.contact-input {
+    width: 100%;
+    padding: 16px;
+    border-radius: 4px;
+    margin-bottom: 28px;
+    margin-top: 4px;
+
+    border: 1px solid var(--input);
+    outline: none;
+}
+
+#contact-textarea {
+    outline: none;
+    width: 100%;
+
+    padding: 10px 15px;
+    border-radius: 4px;
+}
+
+.btn-container {
+    text-align: center;
+}
+
+.contact-btn {
+    text-align: center;
+    background: var(--btn);
+    color: var(--btn-color);
+    padding: 10px 24px;
+    font-size: 14px;
+    font-weight: 500;
+    margin: 20px 0;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+/* footer */
+footer {
+    height: 394px;
+    background: var(--main-header);
+
+    padding: 120px;
+}
+
+.footer-section-one > span {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+footer > .inner-privacy-container {
+    padding-top: 80px;
+
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+}
+
+.footer-company > ul > li, .footer-support > ul > li {
+    list-style-type: none;
+}
+
+.footer-company > ul, .footer-support > ul {
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.footer-company > ul > li > a, .footer-support > ul > li > a {
+    color: #fff;
+    text-decoration: none;
+}

@@ -17,10 +17,6 @@ body {
     margin: 0;
     padding: 0;
 }
-/* 
-.privacy-containter {
-    
-} */
 
 .nav {
     height: 66px;
@@ -37,7 +33,7 @@ body {
 }
 
 .nav ul {
-    width: 60%;
+    width: 50%;
 
     display: flex;
     justify-content: space-between;
@@ -45,13 +41,7 @@ body {
     list-style: none;
 }
 
-/* .privacy-cta {
-    margin-right: 0;
-} */
-
 .privacy {
-    /* width: 40px; */
-    /* height: 20px; */
     padding: 5px 10px;
     font-weight: 500;
     font-size: 14px;
@@ -63,7 +53,6 @@ body {
 
     margin-left: 10px;
     border-radius: 4px;
-
 }
 
 .privacy:hover {
@@ -72,8 +61,6 @@ body {
 
 header {
     height: 200px;
-    /* width: 100%; */
-
     background: var(--main-header);
 
     color: #fff;
@@ -86,7 +73,6 @@ header {
 .inner-privacy-container {
     padding: 0 120px;
 }
-
 
 
 /* body */
@@ -125,7 +111,6 @@ ul >li > span {
 footer {
     height: 394px;
     background: var(--main-header);
-
 }
 
 .footer-section-one > span {
@@ -134,8 +119,6 @@ footer {
 }
 
 footer > .inner-privacy-container {
-    border: 1px solid red;
-    /* height: 100%; */
     padding-top: 80px;
 
     height: 100%;
@@ -143,7 +126,6 @@ footer > .inner-privacy-container {
     justify-content: space-between;
     align-items: center;
     color: #fff;
-
 }
 
 .footer-company > ul > li, .footer-support > ul > li {
@@ -155,7 +137,6 @@ footer > .inner-privacy-container {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-
 }
 
 .footer-company > ul > li > a, .footer-support > ul > li > a {
