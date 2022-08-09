@@ -75,7 +75,7 @@ a:hover {
   position: absolute;
   width: 453px;
   height: 46px;
-  left: 414px;
+  left: 315px;
   top: 611px;
   /* Heading 6 / medium */
   font-family: "Roboto";
@@ -92,8 +92,9 @@ a:hover {
 }
 .main_box{
 position: absolute;
-width: 1280px;
+height: 765px;
 left: 0px;
+top: 61px;
 
 /* Neutral/white */
 
@@ -105,12 +106,12 @@ main{
  align-items: center;
  padding: 0px;
  gap: 8px;
- 
+ width: 500px;
  position: absolute;
- width: 472px;
  height: 28px;
- left: 121px;
- top: 127px;
+ left: 122px;
+ 
+
  }
 .main a {
   font-family: 'Roboto';
@@ -137,9 +138,7 @@ main a:active{
   position: absolute;
   width: 1040px;
   height: 462px;
-  left: 119px;
   top: 105px;
-
   border-radius: 9.230769157409668px;
   border: 4px dashed #bba8a8;
 }
@@ -189,8 +188,8 @@ color: #A59292;
   position: absolute;
   width: 400px;
   height: 40px;
-  left: 437px;
-  top: 901px;
+  left: 357px;
+  top: 820px;
   border: 1px solid#70C3F2;
   background: #70c3f2;
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
@@ -225,7 +224,7 @@ color: #A59292;
 footer{
 position: absolute;
 left: 0px;
-top: 999px;
+top: 1000px;
 
 /* Primary/900 */
 
