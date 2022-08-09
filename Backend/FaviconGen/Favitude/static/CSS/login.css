@@ -3,7 +3,7 @@
     padding: 0;
 }
 #body{
-    background: linear-gradient(90.28deg, #FFFFFF 48.5%, rgba(58, 160, 218, 0) 51.61%), url(./images/iMac\ -\ 1.jpg);
+    background: linear-gradient(90.28deg, #FFFFFF 48.5%, rgba(58, 160, 218, 0) 51.61%), url(../images/images-login/iMac\ -\ 1.jpg);
     background-size: cover;
     font-family: 'Roboto', sans-serif;
 }
@@ -76,7 +76,7 @@
     height: 50px;
     width: 320px;
     padding: 0px 0px 0px 40px;
-    background: url(./images/sms-notification.png) no-repeat scroll 10px;
+    background: url(../images/images-login/sms-notification.png) no-repeat scroll 10px;
     border-radius: 4px;
     border-width: 1px;
     margin-top: 3px;
@@ -96,7 +96,7 @@
     height: 50px;
     width: 350px;
     padding: 0px 0px 0px 10px;
-    background: url(./images/eye-slash.png) no-repeat scroll 335px;
+    background: url(../images/images-login/eye-slash.png) no-repeat scroll 335px;
     margin-top: 3px;
 }
 #pass:focus{
