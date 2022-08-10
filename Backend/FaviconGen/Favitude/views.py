@@ -19,4 +19,10 @@ def contact_page(request):
   return render(request, 'Favitude/contact.html')
 
 def error_page(request):
-  return render(request, 'Favitude/error.html')      
+  return render(request, 'Favitude/error.html')
+
+def generate_page(request):
+  return render(request, 'Favitude/generate.html')
+
+def imageGen_page(request):
+  return render(request, 'Favitude/imageGen.html')            
