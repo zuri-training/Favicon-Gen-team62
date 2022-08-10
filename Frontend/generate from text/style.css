@@ -45,7 +45,7 @@ li {
   display: inline-block;
 }
 .main_box{
-  height: 400px;
+  height: 300px;
   left: 0px;
   position: relative;
   /* Primary/800 */
@@ -116,7 +116,7 @@ li {
   width: 319px;
   height: 40px;
   left: 120px;
-  top: 508px
+  top: 408px
 }
 h4{
   width: 319px;
@@ -170,6 +170,11 @@ letter-spacing: 0.0025em;
 
 color: #080707;
  }
+
+ .form-group{
+   margin-top: 32px;
+ }
+
  input,select{
   display: flex;
   flex-direction: column;
@@ -202,8 +207,8 @@ color: #080707;
   width: 380px;
   height: 40px;
   left: 450px;
-  top: 900px;
-  
+  top: 850px;
+  border: #70C3F2;
   /* Primary/300 */
   
   background: #70C3F2;
@@ -225,11 +230,14 @@ color: #080707;
   /* Neutral/white */
   color: #FFFFFF;
  }
- 
+ .btn a{
+  text-decoration:none ;
+  color: #FFFFFF;
+ }
 footer{
   position:absolute;
   left: 0px;
-  top: 996px;
+  top: 940px;
   /* Primary/900 */
   
   background: #0E5B87;
