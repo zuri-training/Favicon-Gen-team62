@@ -1,8 +1,0 @@
-develop Contact Us Page:
-https://github.com/zuri-training/Favicon-Gen-team62/issues/134
-
-Develop forgot password page:
-https://github.com/zuri-training/Favicon-Gen-team62/issues/56
-
-develop account recovery page:
-https://github.com/zuri-training/Favicon-Gen-team62/issues/133
