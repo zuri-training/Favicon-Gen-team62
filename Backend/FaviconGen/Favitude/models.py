@@ -5,6 +5,7 @@ from django.contrib.auth.models import (
     BaseUserManager, AbstractBaseUser
 )
 from django.forms import modelform_factory
+from django.db.models import Model
 
 # Create your models here.
 class MyUserManager(BaseUserManager):
@@ -21,6 +22,11 @@ class MyUserManager(BaseUserManager):
             date_of_birth=date_of_birth,
         )
 
+
         user.set_password(password)
         user.save(using=self._db)
         return user
+
+
+class generateImage(models.Model):
+    image_field = models.ImageField(upload_to = 'uploads/')

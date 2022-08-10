@@ -179,12 +179,39 @@
     font-size: 13px;
     font-weight: normal;
 }
-#div1g{
+button{
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+.btn{
+    display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 10px 24px;
+gap: 10px;
+
+width: 380px;
+height: 40px;
+
+/* Grey/0 */
+border: 1px solid #E3DADA;
+background: #E3DADA;
+border-radius: 4px;
+
+/* Inside auto layout */
+
+flex: none;
+order: 1;
+flex-grow: 0;
+
+}
+a{
+    text-decoration: none;
+    color: #000;
 }
 .submit:disabled{
     cursor: auto;
