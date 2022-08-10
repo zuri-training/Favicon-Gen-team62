@@ -1,0 +1,74 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'CSS/image-gen.css' %}">
+</head>
+<body>
+<nav>
+    <div class="navbar">
+        <div>
+            <img src="{% static 'images/images-imagegen/logo_1_.png' %}" alt="logo" class="nav_logo">
+        </div>
+        <div class="nav_text">
+            <ul>
+             <li><a href="{% url 'generate_page' %}">Generate</a></li>
+             <li><a href="">Documentation</a></li>
+             <li><a href="http://127.0.0.1:5500/Frontend/tutorial/tutorial.html">Tutorials</a></li>
+             <li><a href="{% url 'about_page' %}">About</a></li>
+            </ul>
+        </div>
+        <div>
+            <img src="{% static 'images/images-imagegen/avatar.png' %}" alt="avatar" class="navbar_avatar">
+        </div>
+    </div>
+</nav>
+<main>
+    <div class="main_box">
+       <div class="main">
+           <li><a href="{% url 'home_page' %}">Home/</a></li>
+           <li><a href="{% url 'generate_page' %}">Generate/</a></li>
+           <li><a href="{% url 'imageGen_page' %}">Generate from image/</a></li>
+        </div>
+        <div class="upload_canvas">
+            <div class="container">
+               <div> <img src="{% static 'images/images-imagegen/plus.png' %}" class="plus"> </div>
+               <div class="upload_text"><p>Drag files here or click to browse through your files</p></div>
+            </div>
+       </div>
+       <div class="text"><p>Only PNG and JPG images are accepted and files must be lower than 5MB</p></div> 
+    </div>
+    <div class="btn">
+         <a href=""><p class="btn_text">GENERATE FAVICON</p></a>
+    </div>
+</main>
+<footer>
+    <div class="footer_content">
+        <div class="first_footer_content">
+            <img src="{% static 'images/images-imagegen/original_logo.png' %}" alt="logo">
+            <p>© 2022 All Rights Reserved</p>
+        </div>
+        <div class="second_footer_content">
+            <a href="" id="standout_text">COMPANY</a>
+            <a href="">About us</a>
+            <a href="">Privacy Policy</a>
+            <a href="">Work with us</a>
+            <a href="">Terms & Conditions</a>
+        </div>
+        <div class="third_footer_content">
+            <a href="" id="standout_text">SUPPORT</a>
+            <a href="{% url 'contact_page' %}">Contact us</a>
+            <a href="">FAQs</a>
+            <a href="http://127.0.0.1:5500/Frontend/tutorial/tutorial.html">Tutorials</a>
+            <a href="">Documantation</a>
+        </div>
+    </div>
+
+    </div>
+</footer>
+</body>
