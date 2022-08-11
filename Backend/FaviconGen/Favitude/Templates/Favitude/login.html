@@ -1,3 +1,5 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,11 +7,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="styles.css"
-    link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="{% static 'CSS/login.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com" >
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
 </head>
@@ -17,9 +19,9 @@
     <div id="div1">
         <p id="p1">Sign in with</p>
         <div id="div1a">
-            <div id="img1"><a href=""><img src="./images/facebook.png" alt="Facebook logo" width="60px" height="38px"></a></div>
-            <div id="img2"><a href=""><img src="./images/google.png" alt="Google logo" width="30px" height="30px"></a></div>
-            <div id="img3"><a href=""><img src="./images/microsoft.png" alt="Microsoft logo" width="28px" height="28px"></a></div>
+            <div id="img1"><a href=""><img src="{% static 'images/images-login/facebook.png' %}" alt="Facebook logo" width="60px" height="38px"></a></div>
+            <div id="img2"><a href=""><img src="{% static 'images/images-login/google.png' %}" alt="Google logo" width="30px" height="30px"></a></div>
+            <div id="img3"><a href=""><img src="{% static 'images/images-login/microsoft.png' %}" alt="Microsoft logo" width="28px" height="28px"></a></div>
         </div>
         <div id="div1b">
             <div id="div1c"></div>
