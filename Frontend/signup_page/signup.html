@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+    <div class="content">
+        <div class="signup_options">
+            <h5>Sign up with</h5>
+            <div class="signup_icons">
+                <img src="images/facebook.png" alt="facebook">
+                <img src="images/google.png" alt="google">
+                <img src="images/microsoft.png" alt="microsoft">
+            </div>
+        </div>
+        <div class="input">
+            <form action="" class="signup_form" onsubmit="return check()" novalidate>
+                <label for="fname">Full Name</label>
+                <input class="fields" type="text" placeholder="Wiliam doe" id="fname" pattern="^[a-zA-Z]+" onkeyup="manageBtn(this)">
+                <div id="errname" class="emsg"></div> 
+                <label for="email">Email</label>
+                <input class="fields" type="email" name="" id="femail" placeholder="williamdoe@example.com" onkeyup="manageBtn(this)">
+                <div id="erremail" class="emsg"></div>
+                <label for="Password">Password</label>
+                <input class="fields" type="password" id="pass" placeholder="Min. 8 characters" required minlength="8" onkeyup="manageBtn(this)">
+                <div id="errpass" class="emsg"></div>
+                <div class="checkbox-rect2">
+                    <input type="checkbox" id="checkbox-rect2" name="check">
+                    <label for="checkbox-rect2">Remember me</label>
+                  </div>
+                
+                <input type="submit" value="Submit" class="submit" id="btnSubmit"disabled>
+            </form>
+        </div>
+        <p class="undertext">Have an account? <a href="http://127.0.0.1:5500/Frontend/log%20in%20page/login.html" class="login">Log in</a></p>
+        
+    </div>
+
+    <script>
+        function check () 
+        {
+            // (C1) INIT
+            var valid = true, error = "", field = "";
+
+            // (C2) NAME
+            field = document.getElementById("fname");
+            error = document.getElementById("errname");
+            if (!field.checkValidity()) {
+                valid = false;
+                field.classList.add("err");
+                error.innerHTML = "Please use only letters (a-z)\r\n";
+            } 
+            else {
+                field.classList.remove("err");
+                error.innerHTML = "";
+            }
+
+            // (C3) NUMBER
+            field = document.getElementById("femail");
+            error = document.getElementById("erremail");
+            if (!field.checkValidity()) {
+                valid = false;
+                field.classList.add("err");
+                error.innerHTML = "Please use a valid email address\r\n";
+            } else {
+                field.classList.remove("err");
+                error.innerHTML = "";
+            }
+
+             // (C4) NUMBER
+             field = document.getElementById("pass");
+            error = document.getElementById("errpass");
+            if (!field.checkValidity()) {
+                valid = false;
+                field.classList.add("err");
+                error.innerHTML = "Password must be at least 8 characters\r\n";
+            } else {
+                field.classList.remove("err");
+                error.innerHTML = "";
+            }
+
+            // (C5) RESULT
+            return valid;
+        }
+
+            function manageBtn(txt) 
+        {
+            var btn = document.getElementById('btnSubmit');
+            if (fname.value != '' && femail.value != '' && pass.value != '') {
+            btn.disabled = false;
+            }
+            else {
+            btn.disabled = true;
+            }
+        }
+        
+    </script>
+
+</body>
+</html>
