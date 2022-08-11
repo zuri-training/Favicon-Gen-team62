@@ -120,7 +120,7 @@
   flex-grow: 0;
 }
 .navbar_btn a :hover{
-  background-color: #494646;
+  background-color: #6db5f8;
 }
 li {
   padding: 10px;
@@ -129,7 +129,7 @@ li {
 }
 
 a:hover {
-  background-color: #c5e8fd;
+  background-color: #838bb6;
 }
 
 .first{
@@ -191,11 +191,11 @@ gap: 8px;
 position: absolute;
 width: 140px;
 height: 40px;
-left: 700px;
+left: 600px;
 top: 802px;
 
 /* Primary/400 */
-
+border: #50B1E9;
 background: #50B1E9;
 color: #FFFFFF;
 font-family: 'Roboto';
@@ -268,7 +268,7 @@ color: #082F45;
   padding: 10px 24px;
 
 /* Primary/300 */
-
+border: #70c3f2;
 background: #70C3F2;
 border-radius: 4px;
 font-family: 'Roboto';

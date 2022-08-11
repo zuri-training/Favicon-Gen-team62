@@ -60,14 +60,6 @@
         color: white;
         background: rgba(112, 195, 242, 1);
     }
-    h1{
-        width: 100%;
-        font-size: 34px;
-        font-weight: 700;
-        line-height: 40px;
-        display: flex;
-        justify-content: center;
-    }
     .main{
         height: 50vh;
     }
@@ -123,13 +115,8 @@
         opacity: 0.5;
         transition: all 0.3 ease;
     }
-    .collapsible input:checked ~ .collapsible-text{
-        max-height: 300px;
-        padding-bottom: 25px;
-        background: #fff;
-        box-shadow: 4px 4px 10px rgba(0, 0, 0, .1);
-        opacity: 1;
-        top: 0;
+    .collapsible input:checked + label:after{
+        transform: rotate(180deg);
     }
     
     .collapsible1{
