@@ -91,3 +91,21 @@ letter-spacing: 0.0125em;
 
 color: #70C3F2;
 }
+
+@media screen and (max-width: 1187px) {
+    .left h4{
+        font-size: 24px;
+        
+    }
+}
+
+@media screen and (max-width: 820px) {
+    .content{
+       flex-direction: column;
+       padding: 10px;
+    }
+    .right img{
+        width: 50%;
+        height: 50%;
+     }
+}
