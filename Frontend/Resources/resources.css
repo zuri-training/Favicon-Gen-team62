@@ -173,6 +173,7 @@ footer {
     display: flex;
     flex-direction: row;
     padding: 67px 260px 0px 160px;
+    gap: 20%;
   }
   .first_footer_content p {
     color: #ffffff;
@@ -185,7 +186,8 @@ footer {
     display: flex;
     flex-direction: column;
     gap: 21px;
-    margin-left: 380px;
+    width: 200px;
+    
   }
   
   .second_footer_content a,
@@ -204,7 +206,7 @@ footer {
     display: flex;
     flex-direction: column;
     gap: 21px;
-    margin-left: 160px;
+  
   }
   #standout_text {
     font-size: 20px;
@@ -212,7 +214,180 @@ footer {
   
   .arrow_up {
     /* float: right; */
-    margin-left: 1300px;
+    margin-left: 90%;
     margin-top: 70px;
     padding-bottom: 63px;
+  }
+
+  @media screen and (max-width: 1038px) {
+    #navbar{
+      font-size: 14px;
+      font-weight: 500px;
+        display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 30px;
+          background: #0E5B87;
+          height: 66px;
+          margin-bottom: 10px;
+    }
+    .navbar_logo{
+      width: 100px;
+      height: 30px;
+      margin-left: 5px;
+    }
+    .navbar_logo img {
+      width: 100px;
+      height: 30px;
+    }
+    .navbar1 a {
+      
+      font-size: 14px;
+      line-height: 20px;
+    }
+    .navbar1 {
+      gap: 100px;
+      padding-left: 0px;
+     margin-left: 0px;
+    }
+    .navbar1 ul{
+      padding-left: 25px;
+    }
+    .navbar2 ul{
+      padding-left: 25px;
+    }
+    
+    .navbar2{
+      margin-right: 0px;
+  }
+  .navbar2 a{
+      width: 40px;
+      height: 20px;
+      font-family: Roboto;
+      font-weight: 500px;
+      padding:10px;
+    }
+    li {
+      padding: 1px;
+  }
+  .wrapper{
+    margin: 0px 40px ;
+  }
+  .footer_content {
+    
+    gap: 30px;
+    padding: 40px 0px 0px 0px;
+    margin: 10px 20px 0px 5%;
+  }
+  .second_footer_content,
+  .third_footer_content {
+   
+    gap: 21px;
+    margin-left: 0px;
+  }
+  .arrow_up {
+    margin-left: 85%;
+    margin-top: -50px;
+    padding-bottom: 0px;
+  }
+
+  .collapsible label, .collapsible2 label, .collapsible3 label, .collapsible4 label, .collapsible5 label, .collapsible6 label, .collapsible7 label{
+    position: relative;
+    font-size: 16px;
+    padding: 10px 30px 20px 10px;
+  }
+
+  .collapsible_text, .collapsible_text2, .collapsible_text3, .collapsible_text4, .collapsible_text5, .collapsible_text6, .collapsible_text7{
+   font-size: 14px;
+  }
+  }
+
+  @media screen and (max-width: 618px) {
+    #navbar{
+      font-size: 12px;
+      font-weight: 500px;
+        display: flex;
+          align-items: center;
+          justify-content: center;
+          background: #0E5B87;
+          height: 66px;
+          margin-bottom: 10px;
+    }
+    .navbar_logo{
+      width: 100px;
+      height: 30px;
+      margin-left: 5px;
+    }
+    .navbar_logo img {
+      width: 100px;
+      height: 30px;
+    }
+    .navbar1 a {
+      
+      font-size: 12px;
+      line-height: 20px;
+    }
+    .navbar1 {
+      gap: 0px;
+      padding-left: 0px;
+     margin-left: 0px;
+    }
+    .navbar1 ul{
+      padding-left: 5px;
+    }
+    .navbar2 ul{
+      padding-left: 5px;
+    }
+    .navbar1 a {
+      color: #98D5F9;
+      text-decoration: none;
+      font-style: normal;
+      font-weight: 500px;
+      font-size: 10px;
+      line-height: 20px;
+      letter-spacing: 0.0015em;
+      font-family: Roboto;
+    }
+    .navbar2{
+      margin-right: 0px;
+  }
+  .navbar2 a{
+      width: 40px;
+      height: 20px;
+      font-family: Roboto;
+      font-weight: 500px;
+      padding:10px;
+    }
+    li {
+      padding: 1px;
+  }
+  .wrapper{
+    margin: 0px 40px ;
+  }
+  .footer_content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px 20px 0px 5px;
+  }
+  .second_footer_content,
+  .third_footer_content {
+    gap: 10px;
+    margin-left: 0px;
+  }
+  .arrow_up {
+    margin-left: 85%;
+    margin-top: -50px;
+    padding-bottom: 0px;
+  }
+
+  .collapsible label, .collapsible2 label, .collapsible3 label, .collapsible4 label, .collapsible5 label, .collapsible6 label, .collapsible7 label{
+    position: relative;
+    font-size: 16px;
+    padding: 10px 30px 20px 10px;
+  }
+
+  .collapsible_text, .collapsible_text2, .collapsible_text3, .collapsible_text4, .collapsible_text5, .collapsible_text6, .collapsible_text7{
+   font-size: 14px;
+  }
   }
