@@ -232,3 +232,25 @@ color: #494646;
 text-decoration: none;
 color: #50B1E9;
 }
+
+@media screen and (max-width: 1187px) {
+    .content{
+        margin-top: 33px;
+        margin-left: 50px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    body{
+        background: url(images/background.jpg);
+        background-size: cover;
+    }
+    
+
+
+    .content{
+        background: white;
+        margin-top: 33px;
+        margin-left: 5%;
+    }
+}
