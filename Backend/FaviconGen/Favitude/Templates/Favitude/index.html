@@ -18,20 +18,18 @@
             </div>
             <div class="navbar1">
                 <ul>
-                    <li><a href="http://127.0.0.1:5500/Frontend/generate%20page/generate_page.html">Generate</a></li>
-                    <li><a href="#">Documentation</a></li>
-                    <li><a href="http://127.0.0.1:5500/Frontend/tutorial/tutorial.html">Tutorials</a></li>
-                    <li><a href="http://127.0.0.1:5500/Frontend/about%20page/about_page.html">About</a></li>
+                    <li><a href="./Frontend/generate page/generate_page.html">Generate</a></li>
+                    <li><a href="./Frontend/documentation/documentation.html">Documentation</a></li>
+                    <li><a href="./Frontend/tutorial/tutorial.html">Tutorials</a></li>
+                    <li><a href="./Frontend/about page/about_page.html">About</a></li>
                 </ul>
             </div>
 
-            <div class="navbar_btn">
-                <div>
-                  <button class="btn1" type="submit"><a href="http://127.0.0.1:5500/Frontend/log%20in%20page/login.html">Log in</a></button>
-                </div>
-                <div>
-                  <button class="btn2" type="submit"><a href="http://127.0.0.1:5500/Frontend/signup_page/signup.html">Register</a></button>
-                </div>
+            <div class="navbar2">
+                <ul class="nav">
+                    <li><a class="login_button" href="./Frontend/log in page/login.html">Login</a></li>
+                    <li><a class="register_button" href="./Frontend/signup_page/signup.html">Register</a></li>
+                </ul>
             </div>
 
         </div>
@@ -43,9 +41,13 @@
                 <h4>All the tools you need, to create custom professional favicons, in one place</h4>
             </div>
             
-            <button id="button1">
-                <a href="http://127.0.0.1:5500/Frontend/generate%20page/generate_page.html">Get Started</a>
-            </button>
+           <div class="getting_started">
+            <a id="button1" href="./Frontend/generate page/generate_page.html">Get Started</a>
+           </div>
+            
+           
+            
+            
             
         </div>
 
@@ -56,7 +58,8 @@
                 <p id="check"><img src="{% static 'images/images-home/check.png' %}" alt="">Download your Favicon in Zip format</p>
                 <p id="check"><img src="{% static 'images/images-home/check.png' %}" alt="">Import your preferred image for use</p>
                 <p id="check"><img src="{% static 'images/images-home/check.png' %}" alt="">One Favicon in Different resolutions </p>
-                <button id="button2">Learn More</button>
+                <a href="./Frontend/tutorial/tutorial.html" id="button2">Learn More</a>
+                
             </div>
             <div class="image2">
                 <img src="{% static 'images/images-home/drawing_icons.png' %}" alt="drawing icons">
@@ -74,7 +77,7 @@
                 </div>
             </div>
             <div class="third_bottom">
-                <h4>Want to know more about Favicons?  <a href="http://" class="click_here">Click here</a></h4>
+                <h4>Want to know more about Favicons?  <a href="./Frontend/tutorial/tutorial.html" class="click_here">Click here</a></h4>
             </div>
         </div>
         <hr>
@@ -83,15 +86,15 @@
             <h4>Generate Favicon</h4>
             <div class="buttons">
                 <div class="first_pair">
-                    <button id="button3">Convert Texts</button>
+                    <a href="./Frontend/generate from text/Gen_from_text.html"id="button3">Convert Texts</a>
                     <p id="button_text1">Generate favicons from texts</p>
-                    <button id="button4">Download</button>
+                    <a href=""id="button4">Download</a>
                     <p id="button_text2">Download/save your generated favicon</p>
                 </div>
                 <div class="second_pair">
-                    <button id="button5">Upload Image</button>
+                    <a href="./Frontend/image_generate_page/image-gen.html" id="button5">Upload Image</a>
                     <p id="button_text3">Generate HTML/CSS link of your favicon</p>
-                    <button id="button6">Generate Link</button>
+                    <a href="" id="button6">Generate Link</a>
                     <p id="button_text4">Generate HTML/CSS link of your favicon</p>
                 </div>
             </div>
@@ -101,12 +104,12 @@
 
         <div class="gallery_container">
             <h4>Favicon Collections</h4>
-            <div class="slides">
+            <!-- <div class="slides">
               <div><img src="{% static 'images/images-home/Frame1.png' %}"></div>
               <div><img src="{% static 'images/images-home/Frame2.png' %}"></div>
               <div><img src="{% static 'images/images-home/Frame3.png' %}"></div>
               <div><img src="{% static 'images/images-home/Frame5.png' %}"></div>
-          </div>
+          </div> -->
     </div>  
     
     <footer>
@@ -117,17 +120,17 @@
             </div>
             <div class="second_footer_content">
                 <a href="#" id="standout_text">COMPANY</a>
-                <a href="#">About us</a>
-                <a href="#">Privacy Policy</a>
+                <a href="./Frontend/about page/about_page.html">About us</a>
+                <a href="./Frontend/privacy_policy/privacy.html">Privacy Policy</a>
                 <a href="#">Work with us</a>
                 <a href="#">Terms & Conditions</a>
             </div>
             <div class="third_footer_content">
                 <a href="#" id="standout_text">SUPPORT</a>
-                <a href="#">Contact us</a>
+                <a href="./Frontend/contact-us/contact-us.html">Contact us</a>
                 <a href="#">FAQs</a>
-                <a href="http://127.0.0.1:5500/Frontend/tutorial/tutorial.html">Tutorials</a>
-                <a href="#">Documantation</a>
+                <a href="./Frontend/tutorial/tutorial.html">Tutorials</a>
+                <a href="./Frontend/documentation/documentation.html">Documantation</a>
             </div>
         </div>
 
