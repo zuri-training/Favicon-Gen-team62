@@ -18,9 +18,9 @@ GUIDE FOR DEVELOPERS:
 
   You can add upstream by entering " git remote add upstream https://github.com/zuri-training/Favicon-Gen-team62.git ".
   
-  Next, switch into the branch you are working on using "git checkout <branch name>".
+  Next, switch into the branch you are working on using "git checkout branchname".
   
-  You can create a new branch using "git checkout -b <branch name>".
+  You can create a new branch using "git checkout -b branchname".
 
 3] Create and activate your virtual environment. 
   
@@ -30,11 +30,11 @@ GUIDE FOR DEVELOPERS:
 
 6] Push your codes to the assigned branch by entering the following commands in your terminal:
   
-  git pull upstream <branch name>
+  git pull upstream branchname
   
   and
   
-  git push origin <branch name>
+  git push origin branchname
 
 7] Make a Pull Request from your GitHub repo. Then it will be merged by the team lead.
   
