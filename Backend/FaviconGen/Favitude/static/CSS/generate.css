@@ -52,8 +52,8 @@ li {
   display: inline-block;
 }
 
-a:hover {
-  background-color: #c5e8fd;
+.navbar1 a:hover, .navbar2 a:hover {
+  font-size: 18px;
 }
 
 .text1 {
@@ -150,7 +150,7 @@ a:hover {
   background: #98d5f9;
   text-align: center;
   justify-content: center;
-  padding: 83px 400px;
+  padding: 83px 200px;
 }
 
 .main_bottom h3 {
@@ -197,6 +197,7 @@ footer {
   display: flex;
   flex-direction: row;
   padding: 67px 260px 0px 160px;
+  gap: 20%;
 }
 .first_footer_content p {
   color: #ffffff;
@@ -209,7 +210,7 @@ footer {
   display: flex;
   flex-direction: column;
   gap: 21px;
-  margin-left: 380px;
+  
 }
 
 .second_footer_content a,
@@ -228,7 +229,7 @@ footer {
   display: flex;
   flex-direction: column;
   gap: 21px;
-  margin-left: 160px;
+ 
 }
 #standout_text {
   font-size: 20px;
@@ -236,7 +237,212 @@ footer {
 
 .arrow_up {
   /* float: right; */
-  margin-left: 1300px;
+  margin-left: 80%;
   margin-top: 70px;
   padding-bottom: 63px;
 }
+
+@media screen and (max-width: 1038px) {
+  #navbar{
+    font-size: 14px;
+    font-weight: 500px;
+      display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+        background: #0E5B87;
+        height: 66px;
+        margin-bottom: 10px;
+  }
+  .navbar_logo{
+    width: 100px;
+    height: 30px;
+    margin-left: 5px;
+  }
+  .navbar_logo img {
+    width: 100px;
+    height: 30px;
+  }
+  .navbar1 a {
+    
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .navbar1 {
+    gap: 100px;
+    padding-left: 0px;
+   margin-right: 0px;
+  }
+  .navbar1 ul{
+    padding-left: 25px;
+  }
+.navbar_avatar{
+  margin-right: 20px;
+}
+  li {
+    padding: 1px;
+}
+
+.main_top {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: center;
+  margin: 131px 30px 133px 30px;
+  gap: 20px;
+}
+.main_bottom {
+  background: #98d5f9;
+  text-align: center;
+  justify-content: center;
+  padding: 25px 40px 80px 40px;
+}
+
+.main_bottom h3 {
+  height: 56px;
+
+  /* Heading 3 / normal */
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 56px;
+  margin-bottom: 10px;
+
+  /* Neutral / white */
+
+  color: #ffffff;
+}
+
+.main_bottom p {
+  height: 40px;
+
+  /* Button/medium */
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  /* or 143% */
+
+  letter-spacing: 0.0125em;
+
+  /* Neutral / white */
+
+  color: #ffffff;
+}
+
+.footer_content {
+  
+  gap: 30px;
+  padding: 40px 0px 0px 0px;
+  margin: 0px 20px 0px 5%;
+}
+.second_footer_content,
+.third_footer_content {
+ 
+  gap: 21px;
+  margin-left: 0px;
+}
+.arrow_up {
+  margin-left: 85%;
+  margin-top: -50px;
+  padding-bottom: 0px;
+}
+
+}
+
+@media screen and (max-width: 618px) {
+  #navbar{
+    font-size: 12px;
+    font-weight: 500px;
+      display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #0E5B87;
+        height: 66px;
+        margin-bottom: 10px;
+  }
+  .navbar_logo{
+    width: 100px;
+    height: 30px;
+    margin-left: 5px;
+  }
+  .navbar_logo img {
+    width: 100px;
+    height: 30px;
+  }
+  .navbar1 a {
+    
+    font-size: 12px;
+    line-height: 20px;
+  }
+  .navbar1 {
+    gap: 0px;
+    padding-left: 0px;
+   margin-left: 0px;
+  }
+  .navbar1 ul{
+    padding-left: 2px;
+  }
+  .navbar2 ul{
+    padding-left: 2px;
+  }
+  .navbar1 a {
+    color: #98D5F9;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 500px;
+    font-size: 10px;
+    line-height: 20px;
+    letter-spacing: 0.0015em;
+    font-family: Roboto;
+  }
+  .navbar2{
+    margin-right: 0px;
+}
+.navbar2 a{
+    width: 40px;
+    height: 20px;
+    font-family: Roboto;
+    font-weight: 500px;
+    padding:10px;
+  }
+  li {
+    padding: 1px;
+}
+
+.main_top {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  margin: 131px 30px 133px 30px;
+  gap: 20px;
+}
+
+.image_generator,
+.text_generator,
+.browse_gallery {
+  width: 100%;
+}
+.footer_content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 10px 20px 0px 5px;
+}
+.second_footer_content,
+.third_footer_content {
+  gap: 10px;
+  margin-left: 0px;
+}
+.arrow_up {
+  margin-left: 85%;
+  margin-top: -50px;
+  padding-bottom: 0px;
+}
+}
+

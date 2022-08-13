@@ -1,0 +1,180 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentatioin</title>
+    <link rel="stylesheet" href="{% static 'CSS/documentation.css' %}">
+</head>
+<body>
+    <div id ="header">
+        <div id="navbar">
+            <div class="navbar_logo">
+                <img src="{% static 'images/images-documentation/original_logo.png' %}" alt="logo">
+            </div>
+            <div class="navbar1">
+                <ul class="nav">
+                    <li><a href="#">Generate</a></li>
+                    <li><a href="#">Documentation</a></li>
+                    <li><a href="#">Tutorials</a></li>
+                    <li><a href="Frontend\about page\about_page.html">About</a></li>
+                </ul>
+            </div>
+
+            <div class="navbar2">
+                <ul class="nav">
+                    <li><a href="Frontend\log in page\index.html">Login</a></li>
+                    <li><a class="register_button" href="#">Register</a></li>
+                </ul>
+            </div>
+
+        </div>
+        
+        <header class="heading">
+            <h4>Documentation</h4>
+        </header>
+    </div>
+
+    <div class="wrapper">
+        <div class="intro">
+            <h4>Introduction to Favitude</h4>
+            <p>Favitude is your one stop destination for favicon generation, as over 200 favicons are generated daily using our platform. These favicons can be generated from text, uploaded images  or emojis and downloaded in a specific resolution or in a zip format containing standard resolutions. We give users access to a library of pre-generated favicons and offer the option for the favicons to be edited based on colors, letters or keywords before being downloaded.</p>
+            <p>Favitude is user-friendly and straightforward and it allows you to generate or create a custom icon within minutes. Our platform offers a preview option allowing you see how your favicon will look on your website. Our generator will create the different size icons automatically and will give you the HTML code too.  Our generator creates both the .ico, .png and the HTML code needed to make your site awesome looking on every browser and every device.</p>  
+        </div>
+        <div class="features">
+            <h4>Features</h4>
+            <p>Favitude features include:</p>
+            <div class="features_content">
+                <div class="left">
+                    <div class="row1">
+                        <ul>
+                            <li><h5>Generate from Text</h5></li>
+                        </ul>
+                        <p>So, you don’t yet have a brand logo? No worries, you can easily generate favicons for your business / brand by simply entering your brand name. It’s that easy!</p>
+                    </div>
+                    <div class="row2">
+                        <ul>
+                            <li><h5>Save to Drafts</h5></li>
+                        </ul>
+                        <p>Don’t want to download your generated favicons immediately? Perhaps you would like to save it for later so you can tweak it some more. We have you covered!</p>
+                    </div>
+
+                </div>
+                <div class="right">
+                    <div class="row1">
+                        <ul>
+                            <li><h5>Generate from Image</h5></li>
+                        </ul>
+                        <p>You can easily generate your project favicons from logos and images you already have.</p>
+                    </div>
+                    <div class="row2">
+                        <ul>
+                            <li><h5>Browse Selections</h5></li>
+                        </ul>
+                        <p>Easily browse through our collections of pre-generated favicons, download and use in your projects. </p>
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+
+        <div class="benefits">
+            <h4>Benefits of Using Favitude</h4>
+            <ul>
+                <li><b class="bold">Customability</b> - Favitude gives you the ability to customise your favicons from our comprehensive set of  customability features on our generate from text, generate from image or browse through our collections of pre-generated favicons. </li>
+                <li><b class="bold">Free access</b> - Favitude is a free platform that helps to redefine and generate to a taste without altering the quality. Favitude was created and designed to help designers, developers, product owners and managers source for favicons quickly with ease. </li>
+                <li><b class="bold">Highest standard of favicons</b> - We are thorough with our implementation of generating favions, making sure that every favicon generated satisfies the highest form of functionality while using.   </li>
+            </ul>
+        </div>
+
+        <div class="how">
+            <h4>How to generate a favicon</h4>
+
+            <div class="how_segment">
+                <h5>#1 Image generate</h5>
+                <p class="main_text">You'll have to start with a picture that embodies your brand, then. It should be straightforward to identify in a busy toolbar, easy to remember, and feature the colors and distinctive "look and feel" of your company. Your logo, or at least a condensed version of it, is a wonderful place to start for all the above reasons plus more.</p>
+
+                <h6>Step 1:</h6>
+                <p>Click on generate favicon from the home page</p>
+                <h6>Step 2:</h6>
+                <p>Click on Image generator</p>
+                <h6>Step 3:</h6>
+                <p>Choose image</p>
+                <h6>Step 4:</h6>
+                <p>Click generate favicon button</p>
+            </div>
+
+            <div class="how_segment">
+                <h5>#2 Text generate</h5>
+                <p class="main_text">You don’t have a logo or image for your website or brand and would like to generate one from scratch, the favitude generate from text feature is the one for you!. It is created ny using several letters or only one letter which has a striking appeal on your website leaving it simple and unique.</p>
+
+                <h6>Step 1:</h6>
+                <p>Click on generate favicon from the home page</p>
+                <h6>Step 2:</h6>
+                <p>Click on Text generator</p>
+                <h6>Step 3:</h6>
+                <p>Enter prefered text, font family, font size, background shape, font color and background color.</p>
+                <h6>Step 4:</h6>
+                <p>Click generate favicon button</p>
+            </div>
+
+            <div class="how_segment">
+                <h5>#3 How to add your favicon to your website</h5>
+                <p class="main_text">To make sure that browsers can find your favicon file and show the image appropriately, you must then upload your favicon (in.ico format) to your site's root directory.</p>
+
+                <h6>Step 1: Name Your Favicon</h6>
+                <p class="small_paragraph">Make sure that your favicon is named favicon.ico. The naming of the file is important because web browsers automatically look for a file with that specific name.</p>
+                <h6>Step 2: Upload Your Favicon</h6>
+                <p class="small_paragraph">Upload your favicon to your website's main or root directory. The file should be accessible at your website.com/favicon.ico. The location of the file is important because web browsers will automatically look for a file named favicon.ico in that specific location.</p>
+            </div>         
+        </div>
+        <div class="usage">
+            <h5>Usage</h5>
+            <p>To get you started, here is a brief illustration that satisfies all requirements:</p>
+            <div class="usage_image_container">
+                <div class="left_image">
+                    <div class="top_left">
+                        <img src="{% static 'images/images-documentation/Browser.png' %}" alt="browser view">
+                    </div>
+                    <div class="bottom_left">
+                        <img src="{% static 'images/images-documentation/Desktop_view.png' %}" alt="desktop view">
+                    </div>
+                </div>
+                <div class="right_image">
+                    <img src="{% static 'images/images-documentation/original_logo.png' %}" alt="logo">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer_content">
+            <div class="first_footer_content">
+                <img src="{% static 'images/images-documentation/Footer_logo.png' %}" alt="logo">
+                <p>© 2022 All Rights Reserved</p>
+            </div>
+            <div class="second_footer_content">
+                <a href="#" id="standout_text">COMPANY</a>
+                <a href="#">About us</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Work with us</a>
+                <a href="#">Terms & Conditions</a>
+            </div>
+            <div class="third_footer_content">
+                <a href="#" id="standout_text">SUPPORT</a>
+                <a href="#">Contact us</a>
+                <a href="#">FAQs</a>
+                <a href="#">Tutorials</a>
+                <a href="#">Documantation</a>
+            </div>
+        </div>
+
+        <div class="arrow_up">
+            <img src="{% static 'images/images-documentation/arrow-up.png' %}" alt="Back to the top">
+        </div>
+    </footer>
+</body>
+</html>
