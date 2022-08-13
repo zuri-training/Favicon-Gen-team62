@@ -28,4 +28,16 @@ def imageGen_page(request):
   return render(request, 'Favitude/imageGen.html')         
 
 def documentation_page(request):
-  return render(request, 'Favitude/documentation.html')   
+  return render(request, 'Favitude/documentation.html')  
+
+def tutorial_page(request):
+  return render(request, 'Favitude/tutorial.html')   
+
+def gen_from_text_page(request):
+  return render(request, 'Favitude/gen_from_text.html')     
+
+def privacy_page(request):
+  return render(request, 'Favitude/privacy.html')       
+
+def FAQs_page(request):
+  return render(request, 'Favitude/FAQs.html')   

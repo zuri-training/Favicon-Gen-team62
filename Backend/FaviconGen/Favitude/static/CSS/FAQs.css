@@ -1,0 +1,1658 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/* Mobile view */
+@media screen and (max-width: 600px) {
+    body{
+        font-family: 'Roboto', sans-serif;
+    }
+    .nav{
+        font-size: 12px;
+        font-weight: 500px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #0E5B87;
+        height: 66px;
+        margin-bottom: 10px;
+    }
+    .img{
+        width: 100px;
+        height: 30px;
+        margin-right: 5px;
+    }
+    .list{
+        display: flex;
+        list-style-type: none;
+        margin-left: 5px;
+    }
+    .list li a{
+        line-height: 20px;
+        color: white;
+        text-decoration: none;
+        margin-right: 8px;
+    }
+    .log{
+        padding: 10px;
+        width: 40px;
+        height: 20px;
+        text-align: center;
+        line-height: 20px;
+        border-radius: 4px;
+        border: 1px solid white;
+        color: white;
+        background: transparent;
+        margin: 0 7px 0px 5px;
+        text-decoration: none;
+
+    }
+    .reg{
+        padding: 10px;
+        text-decoration: none;
+        text-align: center;
+        line-height: 20px;
+        width: 50px;
+        height: 20px;
+        border-radius: 4px;
+        border: 1px solid rgba(112, 195, 242, 1);
+        color: white;
+        background: rgba(112, 195, 242, 1);
+    }
+    h1{
+        width: 100%;
+        font-size: 34px;
+        font-weight: 700;
+        line-height: 40px;
+        display: flex;
+        justify-content: center;
+    }
+    .main{
+        height: 50vh;
+    }
+    .wrapper{
+        margin-top: -10px;
+        display: flex;
+        padding-top: 50px;
+        justify-content: center;
+    }
+    .collapsible{
+        font-size: 24px;
+        width: 450px;
+        overflow: hidden;
+        font-weight: 400;
+    }
+    .collapsible input{
+        display: none;
+    }
+    .collapsible label{
+        position: relative;
+        background: #fff;
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, .1);
+        display: block;
+        margin-bottom: 10px;
+        cursor: pointer;
+        padding: 25px;
+        border-radius: 5px;
+        z-index: 1;
+    }
+    .collapsible label:after{
+        content: "";
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        width: 18px;
+        height: 18px;
+        background: url(./images/Vector.png) no-repeat 0 0;
+        transition: all 0.3 ease;
+    }
+    .collapsible input:checked + label:after{
+        transform: rotate(180deg);
+    }
+    .collapsible-text{
+        font-weight: 400;
+        font-size: 16px;
+        max-height: 1px;
+        overflow: hidden;
+        border-radius: 4px;
+        line-height: 1.4;
+        position: relative;
+        top: -100%;
+        opacity: 0.5;
+        transition: all 0.3 ease;
+    }
+    .collapsible input:checked ~ .collapsible-text{
+        max-height: 300px;
+        padding-bottom: 25px;
+        background: #fff;
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, .1);
+        opacity: 1;
+        top: 0;
+    }
+    
+    .collapsible1{
+        font-size: 24px;
+        width: 450px;
+        overflow: hidden;
+        font-weight: 400;
+    }
+    .collapsible1 input{
+        display: none;
+    }
+    .collapsible1 label{
+        position: relative;
+        background: #fff;
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, .1);
+        display: block;
+        margin-bottom: 10px;
+        cursor: pointer;
+        padding: 25px;
+        border-radius: 4px;
+        z-index: 1;
+    }
+    .collapsible1 label:after{
+        content: "";
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        width: 18px;
+        height: 18px;
+        background: url(./images/Vector.png) no-repeat 0 0;
+        transition: all 0.3 ease;
+    }
+    .collapsible1 input:checked + label:after{
+        transform: rotate(180deg);
+    }
+    .collapsible-text1{
+        font-weight: 400;
+        font-size: 16px;
+        max-height: 1px;
+        overflow: hidden;
+        border-radius: 4px;
+        line-height: 1.4;
+        position: relative;
+        top: -100%;
+        opacity: 0.5;
+        transition: all 0.3 ease;
+    }
+    .collapsible1 input:checked ~ .collapsible-text1{
+        max-height: 300px;
+        padding-bottom: 25px;
+        background: #fff;
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, .1);
+        opacity: 1;
+        top: 0;
+    }
+    .collapsible2{
+        font-size: 24px;
+        width: 450px;
+        overflow: hidden;
+        font-weight: 400;
+    }
+    .collapsible2 input{
+        display: none;
+    }
+    .collapsible2 label{
+        position: relative;
+        background: #fff;
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, .1);
+        display: block;
+        margin-bottom: 10px;
+        cursor: pointer;
+        padding: 25px;
+        border-radius: 4px;
+        z-index: 1;
+    }
+    .collapsible2 label:after{
+        content: "";
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        width: 18px;
+        height: 18px;
+        background: url(./images/Vector.png) no-repeat 0 0;
+        transition: all 0.3 ease;
+    }
+    .collapsible2 input:checked + label:after{
+        transform: rotate(180deg);
+    }
+    .collapsible-text2{
+        font-weight: 400;
+        font-size: 16px;
+        max-height: 1px;
+        overflow: hidden;
+        border-radius: 4px;
+        line-height: 1.4;
+        position: relative;
+        top: -100%;
+        opacity: 0.5;
+        transition: all 0.3 ease;
+    }
+    .collapsible2 input:checked ~ .collapsible-text2{
+        max-height: 300px;
+        padding-bottom: 25px;
+        background: #fff;
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, .1);
+        opacity: 1;
+        top: 0;
+    }
+    .collapsible3{
+        font-size: 24px;
+        width: 450px;
+        overflow: hidden;
+        font-weight: 400;
+    }
+    .collapsible3 input{
+        display: none;
+    }
+    .collapsible3 label{
+        position: relative;
+        background: #fff;
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, .1);
+        display: block;
+        margin-bottom: 10px;
+        cursor: pointer;
+        padding: 25px;
+        border-radius: 4px;
+        z-index: 1;
+    }
+    .collapsible3 label:after{
+        content: "";
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        width: 18px;
+        height: 18px;
+        background: url(./images/Vector.png) no-repeat 0 0;
+        transition: all 0.3 ease;
+    }
+    .collapsible3 input:checked + label:after{
+        transform: rotate(180deg);
+    }
+    .collapsible-text3{
+        font-weight: 400;
+        font-size: 16px;
+        max-height: 1px;
+        overflow: hidden;
+        border-radius: 4px;
+        line-height: 1.4;
+        position: relative;
+        top: -100%;
+        opacity: 0.5;
+        transition: all 0.3 ease;
+    }
+    .collapsible3 input:checked ~ .collapsible-text3{
+        max-height: 300px;
+        padding-bottom: 25px;
+        background: #fff;
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, .1);
+        opacity: 1;
+        top: 0;
+    }
+    .collapsible4{
+        font-size: 24px;
+        width: 450px;
+        overflow: hidden;
+        font-weight: 400;
+    }
+    .collapsible4 input{
+        display: none;
+    }
+    .collapsible4 label{
+        position: relative;
+        background: #fff;
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, .1);
+        display: block;
+        margin-bottom: 10px;
+        cursor: pointer;
+        padding: 25px;
+        border-radius: 4px;
+        z-index: 1;
+    }
+    .collapsible4 label:after{
+        content: "";
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        width: 18px;
+        height: 18px;
+        background: url(./images/Vector.png) no-repeat 0 0;
+        transition: all 0.3 ease;
+    }
+    .collapsible4 input:checked + label:after{
+        transform: rotate(180deg);
+    }
+    .collapsible-text4{
+        font-weight: 400;
+        font-size: 16px;
+        max-height: 1px;
+        overflow: hidden;
+        border-radius: 4px;
+        line-height: 1.4;
+        position: relative;
+        top: -100%;
+        opacity: 0.5;
+        transition: all 0.3 ease;
+    }
+    .collapsible4 input:checked ~ .collapsible-text4{
+        max-height: 300px;
+        padding-bottom: 25px;
+        background: #fff;
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, .1);
+        opacity: 1;
+        top: 0;
+    }
+    .collapsible5{
+        font-size: 24px;
+        width: 450px;
+        overflow: hidden;
+        font-weight: 400;
+    }
+    .collapsible5 input{
+        display: none;
+    }
+    .collapsible5 label{
+        position: relative;
+        background: #fff;
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, .1);
+        display: block;
+        margin-bottom: 10px;
+        cursor: pointer;
+        padding: 25px;
+        border-radius: 4px;
+        z-index: 1;
+    }
+    .collapsible5 label:after{
+        content: "";
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        width: 18px;
+        height: 18px;
+        background: url(./images/Vector.png) no-repeat 0 0;
+        transition: all 0.3 ease;
+    }
+    .collapsible5 input:checked + label:after{
+        transform: rotate(180deg);
+    }
+    .collapsible-text5{
+        font-weight: 400;
+        font-size: 16px;
+        max-height: 1px;
+        overflow: hidden;
+        border-radius: 4px;
+        line-height: 1.4;
+        position: relative;
+        top: -100%;
+        opacity: 0.5;
+        transition: all 0.3 ease;
+    }
+    .collapsible5 input:checked ~ .collapsible-text5{
+        max-height: 300px;
+        padding-bottom: 25px;
+        background: #fff;
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, .1);
+        opacity: 1;
+        top: 0;
+    }
+    .collapsible6{
+        font-size: 24px;
+        width: 450px;
+        overflow: hidden;
+        font-weight: 400;
+    }
+    .collapsible6 input{
+        display: none;
+    }
+    .collapsible6 label{
+        position: relative;
+        background: #fff;
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, .1);
+        display: block;
+        margin-bottom: 10px;
+        cursor: pointer;
+        padding: 25px;
+        border-radius: 4px;
+        z-index: 1;
+    }
+    
+    .collapsible6 label:after{
+        content: "";
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        width: 18px;
+        height: 18px;
+        background: url(./images/Vector.png) no-repeat 0 0;
+        transition: all 0.3 ease;
+    }
+    .collapsible6 input:checked + label:after{
+        transform: rotate(180deg);
+    }
+    .collapsible-text6{
+        font-weight: 400;
+        font-size: 16px;
+        max-height: 1px;
+        overflow: hidden;
+        border-radius: 4px;
+        line-height: 1.4;
+        position: relative;
+        top: -100%;
+        opacity: 0.5;
+        transition: all 0.3 ease;
+    }
+    .collapsible6 input:checked ~ .collapsible-text6{
+        max-height: 300px;
+        padding-bottom: 25px;
+        background: #fff;
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, .1);
+        opacity: 1;
+        top: 0;
+    }
+    .collapsible7{
+        font-size: 24px;
+        width: 450px;
+        overflow: hidden;
+        font-weight: 400;
+    }
+    .collapsible7 input{
+        display: none;
+    }
+    .collapsible7 label{
+        position: relative;
+        background: #fff;
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, .1);
+        display: block;
+        margin-bottom: 10px;
+        cursor: pointer;
+        padding: 25px;
+        border-radius: 4px;
+        z-index: 1;
+    }
+    .collapsible7 label:after{
+        content: "";
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        width: 18px;
+        height: 18px;
+        background: url(./images/Vector.png) no-repeat 0 0;
+        transition: all 0.3 ease;
+    }
+    .collapsible7 input:checked + label:after{
+        transform: rotate(180deg);
+    }
+    .collapsible-text7{
+        font-weight: 400;
+        font-size: 16px;
+        max-height: 1px;
+        overflow: hidden;
+        border-radius: 4px;
+        line-height: 1.4;
+        position: relative;
+        top: -100%;
+        opacity: 0.5;
+        transition: all 0.3 ease;
+    }
+    .collapsible7 input:checked ~ .collapsible-text7{
+        max-height: 300px;
+        padding-bottom: 25px;
+        background: #fff;
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, .1);
+        opacity: 1;
+        top: 0;
+    }
+    .bot{
+        background: rgba(14, 91, 135, 1);
+        height:500px;
+        padding: 40px 10px;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+    }
+    .botdiv1{
+        margin-left: 30px;
+    }
+    .botdiv1 p{
+        margin-top: 20px;
+    }
+    .botdiv2{
+        font-size: 20px;
+        font-weight: 500;
+        margin: 50px 0px 0px 30px;
+    }
+    .botdiv2 li{
+        font-size: 14px;
+        font-weight: 500;
+        margin-top: 20px;
+        list-style-type: none;
+    }
+    .botdiv2 a{
+        color: #fff;
+        text-decoration: none;
+        margin-top: 20px;
+    }
+    .botdiv3{
+        font-size: 20px;
+        font-weight: 500;
+        margin: 50px 0px 0px 30px;
+    }
+    .botdiv3 li{
+        font-size: 14px;
+        font-weight: 500;
+        margin-top: 20px;
+        list-style-type: none;
+    }
+    .botdiv3 a{
+        color: #fff;
+        text-decoration: none;
+        margin-top: 20px;
+    }
+    .top{
+        margin: -55px 0px 0px 400px;
+    }
+}
+/* Tab view */
+@media screen and (min-width: 600px) {
+    body{
+        font-family: 'Roboto', sans-serif;
+    }
+    .nav{
+        font-size: 16px;
+        font-weight: 500px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #0E5B87;
+        height: 66px;
+        margin-bottom: 10px;
+    }
+    .img{
+        width: 100px;
+        height: 30px;
+        margin-right: 10px;
+    }
+    .list{
+        display: flex;
+        list-style-type: none;
+        margin-left: 10px;
+    }
+    .list li a{
+        line-height: 20px;
+        color: white;
+        text-decoration: none;
+        margin-right: 5px;
+    }
+    .log{
+        padding: 10px;
+        width: 60px;
+        height: 20px;
+        text-align: center;
+        line-height: 20px;
+        border-radius: 4px;
+        border: 1px solid white;
+        color: white;
+        background: transparent;
+        margin: 0 10px 0px 10px;
+        text-decoration: none;
+
+    }
+    .reg{
+        padding: 10px;
+        text-decoration: none;
+        text-align: center;
+        line-height: 20px;
+        width: 60px;
+        height: 20px;
+        border-radius: 4px;
+        border: 1px solid rgba(112, 195, 242, 1);
+        color: white;
+        background: rgba(112, 195, 242, 1);
+    }
+    h1{
+        width: 100%;
+        font-size: 34px;
+        font-weight: 700;
+        line-height: 40px;
+        display: flex;
+        justify-content: center;
+    }
+    .main{
+        height: 50vh;
+    }
+    .wrapper{
+        margin-top: -10px;
+        display: flex;
+        padding-top: 50px;
+        justify-content: center;
+    }
+    .collapsible{
+        font-size: 24px;
+        width: 700px;
+        overflow: hidden;
+        font-weight: 400;
+    }
+    .collapsible input{
+        display: none;
+    }
+    .collapsible label{
+        position: relative;
+        background: #fff;
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, .1);
+        display: block;
+        margin-bottom: 10px;
+        cursor: pointer;
+        padding: 25px;
+        border-radius: 5px;
+        z-index: 1;
+    }
+    .collapsible label:after{
+        content: "";
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        width: 18px;
+        height: 18px;
+        background: url(./images/Vector.png) no-repeat 0 0;
+        transition: all 0.3 ease;
+    }
+    .collapsible input:checked + label:after{
+        transform: rotate(180deg);
+    }
+    .collapsible-text{
+        font-weight: 400;
+        font-size: 16px;
+        max-height: 1px;
+        overflow: hidden;
+        border-radius: 4px;
+        line-height: 1.4;
+        position: relative;
+        top: -100%;
+        opacity: 0.5;
+        transition: all 0.3 ease;
+    }
+    .collapsible input:checked ~ .collapsible-text{
+        max-height: 300px;
+        padding-bottom: 25px;
+        background: #fff;
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, .1);
+        opacity: 1;
+        top: 0;
+    }
+    
+    .collapsible1{
+        font-size: 24px;
+        width: 700px;
+        overflow: hidden;
+        font-weight: 400;
+    }
+    .collapsible1 input{
+        display: none;
+    }
+    .collapsible1 label{
+        position: relative;
+        background: #fff;
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, .1);
+        display: block;
+        margin-bottom: 10px;
+        cursor: pointer;
+        padding: 25px;
+        border-radius: 4px;
+        z-index: 1;
+    }
+    .collapsible1 label:after{
+        content: "";
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        width: 18px;
+        height: 18px;
+        background: url(./images/Vector.png) no-repeat 0 0;
+        transition: all 0.3 ease;
+    }
+    .collapsible1 input:checked + label:after{
+        transform: rotate(180deg);
+    }
+    .collapsible-text1{
+        font-weight: 400;
+        font-size: 16px;
+        max-height: 1px;
+        overflow: hidden;
+        border-radius: 4px;
+        line-height: 1.4;
+        position: relative;
+        top: -100%;
+        opacity: 0.5;
+        transition: all 0.3 ease;
+    }
+    .collapsible1 input:checked ~ .collapsible-text1{
+        max-height: 300px;
+        padding-bottom: 25px;
+        background: #fff;
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, .1);
+        opacity: 1;
+        top: 0;
+    }
+    .collapsible2{
+        font-size: 24px;
+        width: 700px;
+        overflow: hidden;
+        font-weight: 400;
+    }
+    .collapsible2 input{
+        display: none;
+    }
+    .collapsible2 label{
+        position: relative;
+        background: #fff;
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, .1);
+        display: block;
+        margin-bottom: 10px;
+        cursor: pointer;
+        padding: 25px;
+        border-radius: 4px;
+        z-index: 1;
+    }
+    .collapsible2 label:after{
+        content: "";
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        width: 18px;
+        height: 18px;
+        background: url(./images/Vector.png) no-repeat 0 0;
+        transition: all 0.3 ease;
+    }
+    .collapsible2 input:checked + label:after{
+        transform: rotate(180deg);
+    }
+    .collapsible-text2{
+        font-weight: 400;
+        font-size: 16px;
+        max-height: 1px;
+        overflow: hidden;
+        border-radius: 4px;
+        line-height: 1.4;
+        position: relative;
+        top: -100%;
+        opacity: 0.5;
+        transition: all 0.3 ease;
+    }
+    .collapsible2 input:checked ~ .collapsible-text2{
+        max-height: 300px;
+        padding-bottom: 25px;
+        background: #fff;
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, .1);
+        opacity: 1;
+        top: 0;
+    }
+    .collapsible3{
+        font-size: 24px;
+        width: 700px;
+        overflow: hidden;
+        font-weight: 400;
+    }
+    .collapsible3 input{
+        display: none;
+    }
+    .collapsible3 label{
+        position: relative;
+        background: #fff;
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, .1);
+        display: block;
+        margin-bottom: 10px;
+        cursor: pointer;
+        padding: 25px;
+        border-radius: 4px;
+        z-index: 1;
+    }
+    .collapsible3 label:after{
+        content: "";
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        width: 18px;
+        height: 18px;
+        background: url(./images/Vector.png) no-repeat 0 0;
+        transition: all 0.3 ease;
+    }
+    .collapsible3 input:checked + label:after{
+        transform: rotate(180deg);
+    }
+    .collapsible-text3{
+        font-weight: 400;
+        font-size: 16px;
+        max-height: 1px;
+        overflow: hidden;
+        border-radius: 4px;
+        line-height: 1.4;
+        position: relative;
+        top: -100%;
+        opacity: 0.5;
+        transition: all 0.3 ease;
+    }
+    .collapsible3 input:checked ~ .collapsible-text3{
+        max-height: 300px;
+        padding-bottom: 25px;
+        background: #fff;
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, .1);
+        opacity: 1;
+        top: 0;
+    }
+    .collapsible4{
+        font-size: 24px;
+        width: 700px;
+        overflow: hidden;
+        font-weight: 400;
+    }
+    .collapsible4 input{
+        display: none;
+    }
+    .collapsible4 label{
+        position: relative;
+        background: #fff;
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, .1);
+        display: block;
+        margin-bottom: 10px;
+        cursor: pointer;
+        padding: 25px;
+        border-radius: 4px;
+        z-index: 1;
+    }
+    .collapsible4 label:after{
+        content: "";
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        width: 18px;
+        height: 18px;
+        background: url(./images/Vector.png) no-repeat 0 0;
+        transition: all 0.3 ease;
+    }
+    .collapsible4 input:checked + label:after{
+        transform: rotate(180deg);
+    }
+    .collapsible-text4{
+        font-weight: 400;
+        font-size: 16px;
+        max-height: 1px;
+        overflow: hidden;
+        border-radius: 4px;
+        line-height: 1.4;
+        position: relative;
+        top: -100%;
+        opacity: 0.5;
+        transition: all 0.3 ease;
+    }
+    .collapsible4 input:checked ~ .collapsible-text4{
+        max-height: 300px;
+        padding-bottom: 25px;
+        background: #fff;
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, .1);
+        opacity: 1;
+        top: 0;
+    }
+    .collapsible5{
+        font-size: 24px;
+        width: 700px;
+        overflow: hidden;
+        font-weight: 400;
+    }
+    .collapsible5 input{
+        display: none;
+    }
+    .collapsible5 label{
+        position: relative;
+        background: #fff;
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, .1);
+        display: block;
+        margin-bottom: 10px;
+        cursor: pointer;
+        padding: 25px;
+        border-radius: 4px;
+        z-index: 1;
+    }
+    .collapsible5 label:after{
+        content: "";
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        width: 18px;
+        height: 18px;
+        background: url(./images/Vector.png) no-repeat 0 0;
+        transition: all 0.3 ease;
+    }
+    .collapsible5 input:checked + label:after{
+        transform: rotate(180deg);
+    }
+    .collapsible-text5{
+        font-weight: 400;
+        font-size: 16px;
+        max-height: 1px;
+        overflow: hidden;
+        border-radius: 4px;
+        line-height: 1.4;
+        position: relative;
+        top: -100%;
+        opacity: 0.5;
+        transition: all 0.3 ease;
+    }
+    .collapsible5 input:checked ~ .collapsible-text5{
+        max-height: 300px;
+        padding-bottom: 25px;
+        background: #fff;
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, .1);
+        opacity: 1;
+        top: 0;
+    }
+    .collapsible6{
+        font-size: 24px;
+        width: 700px;
+        overflow: hidden;
+        font-weight: 400;
+    }
+    .collapsible6 input{
+        display: none;
+    }
+    .collapsible6 label{
+        position: relative;
+        background: #fff;
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, .1);
+        display: block;
+        margin-bottom: 10px;
+        cursor: pointer;
+        padding: 25px;
+        border-radius: 4px;
+        z-index: 1;
+    }
+    
+    .collapsible6 label:after{
+        content: "";
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        width: 18px;
+        height: 18px;
+        background: url(./images/Vector.png) no-repeat 0 0;
+        transition: all 0.3 ease;
+    }
+    .collapsible6 input:checked + label:after{
+        transform: rotate(180deg);
+    }
+    .collapsible-text6{
+        font-weight: 400;
+        font-size: 16px;
+        max-height: 1px;
+        overflow: hidden;
+        border-radius: 4px;
+        line-height: 1.4;
+        position: relative;
+        top: -100%;
+        opacity: 0.5;
+        transition: all 0.3 ease;
+    }
+    .collapsible6 input:checked ~ .collapsible-text6{
+        max-height: 300px;
+        padding-bottom: 25px;
+        background: #fff;
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, .1);
+        opacity: 1;
+        top: 0;
+    }
+    .collapsible7{
+        font-size: 24px;
+        width: 700px;
+        overflow: hidden;
+        font-weight: 400;
+    }
+    .collapsible7 input{
+        display: none;
+    }
+    .collapsible7 label{
+        position: relative;
+        background: #fff;
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, .1);
+        display: block;
+        margin-bottom: 10px;
+        cursor: pointer;
+        padding: 25px;
+        border-radius: 4px;
+        z-index: 1;
+    }
+    .collapsible7 label:after{
+        content: "";
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        width: 18px;
+        height: 18px;
+        background: url(./images/Vector.png) no-repeat 0 0;
+        transition: all 0.3 ease;
+    }
+    .collapsible7 input:checked + label:after{
+        transform: rotate(180deg);
+    }
+    .collapsible-text7{
+        font-weight: 400;
+        font-size: 16px;
+        max-height: 1px;
+        overflow: hidden;
+        border-radius: 4px;
+        line-height: 1.4;
+        position: relative;
+        top: -100%;
+        opacity: 0.5;
+        transition: all 0.3 ease;
+    }
+    .collapsible7 input:checked ~ .collapsible-text7{
+        max-height: 300px;
+        padding-bottom: 25px;
+        background: #fff;
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, .1);
+        opacity: 1;
+        top: 0;
+    }
+    .bot{
+        background: rgba(14, 91, 135, 1);
+        height:300px;
+        padding: 40px 20px;
+        color: #fff;
+        display: flex;
+        flex-direction: row;
+    }
+    .botdiv1{
+        margin-left: 30px;
+        margin-top: 20px;
+    }
+    .botdiv1 p{
+        margin-top: 20px;
+    }
+    .botdiv2{
+        font-size: 20px;
+        font-weight: 500;
+        margin: 20px 0px 0px 100px;
+    }
+    .botdiv2 li{
+        font-size: 14px;
+        font-weight: 500;
+        margin-top: 20px;
+        list-style-type: none;
+    }
+    .botdiv2 a{
+        color: #fff;
+        text-decoration: none;
+        margin-top: 20px;
+    }
+    .botdiv3{
+        font-size: 20px;
+        font-weight: 500;
+        margin: 20px 0px 0px 100px;
+    }
+    .botdiv3 li{
+        font-size: 14px;
+        font-weight: 500;
+        margin-top: 20px;
+        list-style-type: none;
+    }
+    .botdiv3 a{
+        color: #fff;
+        text-decoration: none;
+        margin-top: 20px;
+    }
+    .top{
+        margin: 180px 0px 0px 80px;
+    }
+}
+
+/* Desktop view */
+@media screen and (min-width: 992px) {
+    body{
+        font-family: 'Roboto', sans-serif;
+    }
+    .nav{
+        font-size: 14px;
+        font-weight: 500px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #0E5B87;
+        width: 100%;
+        height: 66px;
+        margin-bottom: 10px;
+    }
+    .img{
+        width: 153px;
+        height: 37.36px;
+        top: 14.32px;
+        margin-right: 120px;
+    }
+    .list{
+        display: flex;
+        list-style-type: none;
+        margin: 0px 120px 0px 120px;
+    }
+    .list li a{
+        line-height: 20px;
+        color: white;
+        text-decoration: none;
+        margin-right: 15px;
+    }
+    .log{
+        padding: 10px;
+        width: 60px;
+        height: 20px;
+        text-align: center;
+        line-height: 20px;
+        border-radius: 4px;
+        border: 1px solid white;
+        color: white;
+        background: transparent;
+        margin: 0 25px 0px 45px;
+        text-decoration: none;
+
+    }
+    .reg{
+        padding: 10px;
+        text-decoration: none;
+        text-align: center;
+        line-height: 20px;
+        width: 70px;
+        height: 20px;
+        border-radius: 4px;
+        border: 1px solid rgba(112, 195, 242, 1);
+        color: white;
+        background: rgba(112, 195, 242, 1);
+    }
+    h1{
+        width: 100%;
+        font-size: 34px;
+        font-weight: 700;
+        line-height: 40px;
+        display: flex;
+        justify-content: center;
+    }
+    .main{
+        height: 50vh;
+    }
+    .wrapper{
+        margin-top: -10px;
+        display: flex;
+        padding-top: 50px;
+        justify-content: center;
+        margin-left: 80px;
+    }
+    .collapsible{
+        font-size: 24px;
+        width: 1040px;
+        overflow: hidden;
+        font-weight: 400;
+    }
+    .collapsible input{
+        display: none;
+    }
+    .collapsible label{
+        position: relative;
+        background: #fff;
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, .1);
+        display: block;
+        margin-bottom: 10px;
+        cursor: pointer;
+        padding: 15px;
+        border-radius: 5px;
+        z-index: 1;
+    }
+    .collapsible label:after{
+        content: "";
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        width: 18px;
+        height: 18px;
+        background: url(./images/Vector.png) no-repeat 0 0;
+        transition: all 0.3 ease;
+    }
+    .collapsible input:checked + label:after{
+        transform: rotate(180deg);
+    }
+    .collapsible-text{
+        font-weight: 400;
+        font-size: 16px;
+        max-height: 1px;
+        overflow: hidden;
+        border-radius: 4px;
+        line-height: 1.4;
+        position: relative;
+        top: -100%;
+        opacity: 0.5;
+        transition: all 0.3 ease;
+    }
+    .collapsible input:checked ~ .collapsible-text{
+        max-height: 300px;
+        padding-bottom: 25px;
+        background: #fff;
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, .1);
+        opacity: 1;
+        top: 0;
+    }
+    
+    .collapsible1{
+        font-size: 24px;
+        width: 1040px;
+        overflow: hidden;
+        font-weight: 400;
+    }
+    .collapsible1 input{
+        display: none;
+    }
+    .collapsible1 label{
+        position: relative;
+        background: #fff;
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, .1);
+        display: block;
+        margin-bottom: 10px;
+        cursor: pointer;
+        padding: 15px;
+        border-radius: 4px;
+        z-index: 1;
+    }
+    .collapsible1 label:after{
+        content: "";
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        width: 18px;
+        height: 18px;
+        background: url(./images/Vector.png) no-repeat 0 0;
+        transition: all 0.3 ease;
+    }
+    .collapsible1 input:checked + label:after{
+        transform: rotate(180deg);
+    }
+    .collapsible-text1{
+        font-weight: 400;
+        font-size: 16px;
+        max-height: 1px;
+        overflow: hidden;
+        border-radius: 4px;
+        line-height: 1.4;
+        position: relative;
+        top: -100%;
+        opacity: 0.5;
+        transition: all 0.3 ease;
+    }
+    .collapsible1 input:checked ~ .collapsible-text1{
+        max-height: 300px;
+        padding-bottom: 25px;
+        background: #fff;
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, .1);
+        opacity: 1;
+        top: 0;
+    }
+    .collapsible2{
+        font-size: 24px;
+        width: 1040px;
+        overflow: hidden;
+        font-weight: 400;
+    }
+    .collapsible2 input{
+        display: none;
+    }
+    .collapsible2 label{
+        position: relative;
+        background: #fff;
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, .1);
+        display: block;
+        margin-bottom: 10px;
+        cursor: pointer;
+        padding: 15px;
+        border-radius: 4px;
+        z-index: 1;
+    }
+    .collapsible2 label:after{
+        content: "";
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        width: 18px;
+        height: 18px;
+        background: url(./images/Vector.png) no-repeat 0 0;
+        transition: all 0.3 ease;
+    }
+    .collapsible2 input:checked + label:after{
+        transform: rotate(180deg);
+    }
+    .collapsible-text2{
+        font-weight: 400;
+        font-size: 16px;
+        max-height: 1px;
+        overflow: hidden;
+        border-radius: 4px;
+        line-height: 1.4;
+        position: relative;
+        top: -100%;
+        opacity: 0.5;
+        transition: all 0.3 ease;
+    }
+    .collapsible2 input:checked ~ .collapsible-text2{
+        max-height: 300px;
+        padding-bottom: 25px;
+        background: #fff;
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, .1);
+        opacity: 1;
+        top: 0;
+    }
+    .collapsible3{
+        font-size: 24px;
+        width: 1040px;
+        overflow: hidden;
+        font-weight: 400;
+    }
+    .collapsible3 input{
+        display: none;
+    }
+    .collapsible3 label{
+        position: relative;
+        background: #fff;
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, .1);
+        display: block;
+        margin-bottom: 10px;
+        cursor: pointer;
+        padding: 15px;
+        border-radius: 4px;
+        z-index: 1;
+    }
+    .collapsible3 label:after{
+        content: "";
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        width: 18px;
+        height: 18px;
+        background: url(./images/Vector.png) no-repeat 0 0;
+        transition: all 0.3 ease;
+    }
+    .collapsible3 input:checked + label:after{
+        transform: rotate(180deg);
+    }
+    .collapsible-text3{
+        font-weight: 400;
+        font-size: 16px;
+        max-height: 1px;
+        overflow: hidden;
+        border-radius: 4px;
+        line-height: 1.4;
+        position: relative;
+        top: -100%;
+        opacity: 0.5;
+        transition: all 0.3 ease;
+    }
+    .collapsible3 input:checked ~ .collapsible-text3{
+        max-height: 300px;
+        padding-bottom: 25px;
+        background: #fff;
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, .1);
+        opacity: 1;
+        top: 0;
+    }
+    .collapsible4{
+        font-size: 24px;
+        width: 1040px;
+        overflow: hidden;
+        font-weight: 400;
+    }
+    .collapsible4 input{
+        display: none;
+    }
+    .collapsible4 label{
+        position: relative;
+        background: #fff;
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, .1);
+        display: block;
+        margin-bottom: 10px;
+        cursor: pointer;
+        padding: 15px;
+        border-radius: 4px;
+        z-index: 1;
+    }
+    .collapsible4 label:after{
+        content: "";
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        width: 18px;
+        height: 18px;
+        background: url(./images/Vector.png) no-repeat 0 0;
+        transition: all 0.3 ease;
+    }
+    .collapsible4 input:checked + label:after{
+        transform: rotate(180deg);
+    }
+    .collapsible-text4{
+        font-weight: 400;
+        font-size: 16px;
+        max-height: 1px;
+        overflow: hidden;
+        border-radius: 4px;
+        line-height: 1.4;
+        position: relative;
+        top: -100%;
+        opacity: 0.5;
+        transition: all 0.3 ease;
+    }
+    .collapsible4 input:checked ~ .collapsible-text4{
+        max-height: 300px;
+        padding-bottom: 25px;
+        background: #fff;
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, .1);
+        opacity: 1;
+        top: 0;
+    }
+    .collapsible5{
+        font-size: 24px;
+        width: 1040px;
+        overflow: hidden;
+        font-weight: 400;
+    }
+    .collapsible5 input{
+        display: none;
+    }
+    .collapsible5 label{
+        position: relative;
+        background: #fff;
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, .1);
+        display: block;
+        margin-bottom: 10px;
+        cursor: pointer;
+        padding: 15px;
+        border-radius: 4px;
+        z-index: 1;
+    }
+    .collapsible5 label:after{
+        content: "";
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        width: 18px;
+        height: 18px;
+        background: url(./images/Vector.png) no-repeat 0 0;
+        transition: all 0.3 ease;
+    }
+    .collapsible5 input:checked + label:after{
+        transform: rotate(180deg);
+    }
+    .collapsible-text5{
+        font-weight: 400;
+        font-size: 16px;
+        max-height: 1px;
+        overflow: hidden;
+        border-radius: 4px;
+        line-height: 1.4;
+        position: relative;
+        top: -100%;
+        opacity: 0.5;
+        transition: all 0.3 ease;
+    }
+    .collapsible5 input:checked ~ .collapsible-text5{
+        max-height: 300px;
+        padding-bottom: 25px;
+        background: #fff;
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, .1);
+        opacity: 1;
+        top: 0;
+    }
+    .collapsible6{
+        font-size: 24px;
+        width: 1040px;
+        overflow: hidden;
+        font-weight: 400;
+    }
+    .collapsible6 input{
+        display: none;
+    }
+    .collapsible6 label{
+        position: relative;
+        background: #fff;
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, .1);
+        display: block;
+        margin-bottom: 10px;
+        cursor: pointer;
+        padding: 15px;
+        border-radius: 4px;
+        z-index: 1;
+    }
+    .collapsible6 label:after{
+        content: "";
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        width: 18px;
+        height: 18px;
+        background: url(./images/Vector.png) no-repeat 0 0;
+        transition: all 0.3 ease;
+    }
+    .collapsible6 input:checked + label:after{
+        transform: rotate(180deg);
+    }
+    .collapsible-text6{
+        font-weight: 400;
+        font-size: 16px;
+        max-height: 1px;
+        overflow: hidden;
+        border-radius: 4px;
+        line-height: 1.4;
+        position: relative;
+        top: -100%;
+        opacity: 0.5;
+        transition: all 0.3 ease;
+    }
+    .collapsible6 input:checked ~ .collapsible-text6{
+        max-height: 300px;
+        padding-bottom: 25px;
+        background: #fff;
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, .1);
+        opacity: 1;
+        top: 0;
+    }
+    .collapsible7{
+        font-size: 24px;
+        width: 1040px;
+        overflow: hidden;
+        font-weight: 400;
+    }
+    .collapsible7 input{
+        display: none;
+    }
+    .collapsible7 label{
+        position: relative;
+        background: #fff;
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, .1);
+        display: block;
+        margin-bottom: 10px;
+        cursor: pointer;
+        padding: 15px;
+        border-radius: 4px;
+        z-index: 1;
+    }
+    .collapsible7 label:after{
+        content: "";
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        width: 18px;
+        height: 18px;
+        background: url(./images/Vector.png) no-repeat 0 0;
+        transition: all 0.3 ease;
+    }
+    .collapsible7 input:checked + label:after{
+        transform: rotate(180deg);
+    }
+    .collapsible-text7{
+        font-weight: 400;
+        font-size: 16px;
+        max-height: 1px;
+        overflow: hidden;
+        border-radius: 4px;
+        line-height: 1.4;
+        position: relative;
+        top: -100%;
+        opacity: 0.5;
+        transition: all 0.3 ease;
+    }
+    .collapsible7 input:checked ~ .collapsible-text7{
+        max-height: 300px;
+        padding-bottom: 25px;
+        background: #fff;
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, .1);
+        opacity: 1;
+        top: 0;
+    }
+    .bot{
+        background: rgba(14, 91, 135, 1);
+        height:280px;
+        /* width: 100%; */
+        padding: 60px 80px;
+        color: #fff;
+        display: flex;
+    }
+    .botdiv1{
+        margin-left: 30px;
+    }
+    .botdiv1 p{
+        margin-top: 20px;
+    }
+    .botdiv2{
+        font-size: 20px;
+        font-weight: 500;
+        margin: 0 200px 0px 400px;
+    }
+    .botdiv2 li{
+        font-size: 14px;
+        font-weight: 500;
+        margin-top: 20px;
+        list-style-type: none;
+    }
+    .botdiv2 a{
+        color: #fff;
+        text-decoration: none;
+        margin-top: 20px;
+    }
+    .botdiv3{
+        font-size: 20px;
+        font-weight: 500;
+    }
+    .botdiv3 li{
+        font-size: 14px;
+        font-weight: 500;
+        margin-top: 20px;
+        list-style-type: none;
+    }
+    .botdiv3 a{
+        color: #fff;
+        text-decoration: none;
+        margin-top: 20px;
+    }
+    .top{
+        margin: 130px 0px 0px 50px;
+    }    
+}
