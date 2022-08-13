@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Generate from text</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="navbar">
+          <div>
+              <img src="./original_logo.png" alt="logo" class="nav_logo">
+          </div>
+          <div class="nav_text">
+              <ul>
+               <li><a href="http://127.0.0.1:5500/Frontend/generate%20page/generate_page.html">Generate</a></li>
+               <li><a href="">Documentation</a></li>
+               <li><a href="http://127.0.0.1:5500/Frontend/tutorial/tutorial.html">Tutorials</a></li>
+               <li><a href="http://127.0.0.1:5500/Frontend/about%20page/about_page.html">About</a></li>
+              </ul>
+          </div>
+          <div>
+              <img src="./avatar.png" alt="avatar" class="navbar_avatar">
+          </div>
+      </div>
+  </nav>
+  <main>
+      <div class="main_box">
+         <div class="main">
+             <li><a href="http://127.0.0.1:5500/Frontend/homepage/homepage.html">Home/</a></li>
+             <li><a href="http://127.0.0.1:5500/Frontend/generate%20page/generate_page.html">Generate/</a></li>
+             <li><a href="http://127.0.0.1:5500/Frontend/image_generate_page/image-gen.html">Generate from Text/</a></li>
+          </div>
+          <div class="first_text">
+            <p class="text"> Easily generate favicons from texts</p>
+          </div>
+      </div>
+      <div class="mid"> 
+         <div class="frame">
+             <h4>Generate from text</h4>
+          </div>
+         <div>
+          <form>
+            <div class="form">
+              <div class="left">
+                <div class="form-group">
+                  <label for="txt">Text</label><br>
+                  <input type="text" id="txt" name="text" />
+                </div>
+                <div class="form-group">
+                    <label for="fsize">Font size</label><br>
+                    <input type="number" id="fsize" name="fsize" />
+                  </div>
+                <div class="form-group">
+                  <label for="bground">Background</label><br>
+                  <select id="bground" name="Background">
+                    <option value="square">Square</option>
+                    <option value="circle">Circle</option>
+                    <option value="triangular">Triangle</option>
+                  </select>
+                </div>
+              </div>
+              <div>
+                <div class="form-group">
+                  <label for="fcolor">Font color</label><br>
+                  <input type="color" id="fcolor" name="fcolor" value="#000000" />
+              </div>
+              <div class="form-group">
+                <label for="ftype">Font</label><br>
+                <select id="ftype">
+                  <option value="Roboto"></option>
+                  <option value="Arial"></option>
+                  <option value="Verdana"></option>
+                  <option value="Times New Roman"></option>
+                  <option value="Helvetica"></option>
+                  <option value="Calibri"></option>
+                  <option value="Garamond"></option>
+                  <option value="Futura"></option>
+                  <option value="Franklin Gothic"></option>
+                  <option value="Rockwell"></option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="bcolor">Background color</label><br>
+                <input type="color" id="bcolor" name="bcolor" value="#ffffff" />
+              </div>
+            </div>
+              </div>
+          </form>
+        </div>
+        <div>
+          <button class="btn">
+            <a href="http://127.0.0.1:5500/Frontend/generate%20page/generate_page.html">Generate favicon</a>
+        </button>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="footer_content">
+          <div class="first_footer_content">
+              <img src="./footer_logo.png" alt="logo">
+              <p>© 2022 All Rights Reserved</p>
+          </div>
+          <div class="second_footer_content">
+              <a href="#" id="standout_text">COMPANY</a>
+              <a href="#">About us</a>
+              <a href="#">Privacy Policy</a>
+              <a href="#">Work with us</a>
+              <a href="#">Terms & Conditions</a>
+          </div>
+          <div class="third_footer_content">
+              <a href="#" id="standout_text">SUPPORT</a>
+              <a href="#">Contact us</a>
+              <a href="#">FAQs</a>
+              <a href="#">Tutorials</a>
+              <a href="#">Documantation</a>
+          </div>
+      </div>
+
+      <div class="arrow_up">
+          <img src="./arrow-up.png" alt="Back to the top">
+      </div>
+  </footer>
+  </body>
+</html>

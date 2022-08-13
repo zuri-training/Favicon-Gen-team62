@@ -13,4 +13,9 @@ urlpatterns = [
   path("generate/", views.generate_page, name="generate_page"),
   path("imageGen/", views.imageGen_page, name="imageGen_page"),
   path("documentation/", views.documentation_page, name="documentation_page"),
+  path("tutorial/", views.tutorial_page, name="tutorial_page"),
+  path("gen_from_text/", views.gen_from_text_page, name="gen_from_text_page"),
+  path("privacy/", views.privacy_page, name="privacy_page"),
+  path("FAQs/", views.FAQs_page, name="FAQs_page"),
+  
 ]

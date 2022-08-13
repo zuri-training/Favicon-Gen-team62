@@ -1,0 +1,393 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+#navbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 66px;
+  background-color: #0e5b87;
+  justify-content: space-between;
+}
+
+.navbar_logo {
+  width: 153px;
+  height: 37px;
+  margin-left: 121px;
+}
+
+.navbar1 {
+  gap: 20px;
+  align-items: center;
+  margin-left: 15px;
+}
+
+.navbar1 a {
+  color: #98D5F9;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 500px;
+  font-size: 14px;
+  line-height: 23px;
+  letter-spacing: 0.0015em;
+  font-family: Roboto;
+}
+.navbar2{
+    margin-right: 100px;
+}
+.navbar2 a{
+    width: 40px;
+    height: 20px;
+    font-family: Roboto;
+    font-weight: 500px;
+    padding:10px 24px;
+    color: white;
+    text-decoration: none;
+    border: 1px solid white;
+    border-radius: 5px;
+    font-size: 14px;
+    letter-spacing: 1.25%;
+    vertical-align:middle;
+    text-align: center;
+    line-height: 20px;
+   
+    
+}
+.register_button{
+    background: #70C3F2;
+}
+
+
+li {
+    padding: 10px;
+    list-style-type: none;
+    display: inline-block;
+}
+  
+a:hover {
+    background-color: #c5e8fd;
+}
+.heading{
+    padding: 20px 0px;
+    text-align: center;
+    margin-right: 35px;
+}
+
+.heading h4{
+    /* Heading 4 / bold */
+    
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 40px;
+    /* identical to box height */
+    
+    letter-spacing: 0.0025em;
+    
+    color: #000000;
+}
+.wrapper{
+    margin: 0px 120px ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.collapsible input, .collapsible2 input, .collapsible3 input, .collapsible4 input,.collapsible5 input, .collapsible6 input, .collapsible7 input{
+    display: none;
+}
+
+.collapsible label, .collapsible2 label, .collapsible3 label, .collapsible4 label, .collapsible5 label, .collapsible6 label, .collapsible7 label{
+    position: relative;
+
+    padding: 10px 0px 20px 22px;
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 28px;
+
+    background: #FFFFFF;
+/* Shadow/Default shadow */
+
+box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1), 4px 4px 10px rgba(0, 0, 0, 0.08);
+border-radius: 5px;
+display: block;
+margin-top: 10px;
+margin-bottom: 10px;
+z-index: 1;
+cursor: pointer;
+}
+
+.collapsible label:after, .collapsible2 label:after, .collapsible3 label:after, .collapsible4 label:after, .collapsible5 label:after, .collapsible6 label:after, .collapsible7 label:after {
+    content: "";
+    position: absolute;
+    right: 10px;
+    top: 20px;
+    width: 26px;
+    height: 22px;
+    background: url(images/arrow-down.png) no-repeat 0 0;
+    transition: all 0.3s ease;
+}
+
+.collapsible input:checked + label:after, .collapsible2 input:checked + label:after, .collapsible3 input:checked + label:after, .collapsible4 input:checked + label:after, .collapsible5 input:checked + label:after, .collapsible6 input:checked + label:after, .collapsible7 input:checked + label:after{
+    transform: rotate(180deg);
+}
+
+.collapsible_text, .collapsible_text2, .collapsible_text3, .collapsible_text4, .collapsible_text5, .collapsible_text6, .collapsible_text7{
+    max-height: 0.1px;
+    overflow: hidden;
+    border-radius: 4px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.4px;
+    position: relative;
+    /* top: -100%; */
+    opacity: 0.5;
+    transition: all 0.3s ease;
+
+}
+
+.collapsible input:checked ~ .collapsible_text, .collapsible2 input:checked ~ .collapsible_text2, .collapsible3 input:checked ~ .collapsible_text3, .collapsible4 input:checked ~ .collapsible_text4, .collapsible5 input:checked ~ .collapsible_text5, .collapsible6 input:checked ~ .collapsible_text6, .collapsible7 input:checked ~ .collapsible_text7{
+    max-height: 350px;
+    line-height: 20px;
+    padding-bottom: 15px;
+    background: #FFFFFF;
+    opacity: 1;
+    top: 0;
+  
+}
+
+footer {
+    background: #0e5b87;
+    margin-top: 122px;
+  }
+  
+  .footer_content {
+    display: flex;
+    flex-direction: row;
+    padding: 67px 260px 0px 160px;
+    gap: 20%;
+  }
+  .first_footer_content p {
+    color: #ffffff;
+    margin-top: 12px;
+    font-weight: 400;
+    font-size: 12px;
+  }
+  .second_footer_content,
+  .third_footer_content {
+    display: flex;
+    flex-direction: column;
+    gap: 21px;
+    width: 200px;
+    
+  }
+  
+  .second_footer_content a,
+  .third_footer_content a {
+    color: #ffffff;
+    text-decoration: none;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.001em;
+  }
+  
+  .third_footer_content {
+    display: flex;
+    flex-direction: column;
+    gap: 21px;
+  
+  }
+  #standout_text {
+    font-size: 20px;
+  }
+  
+  .arrow_up {
+    /* float: right; */
+    margin-left: 90%;
+    margin-top: 70px;
+    padding-bottom: 63px;
+  }
+
+  @media screen and (max-width: 1038px) {
+    #navbar{
+      font-size: 14px;
+      font-weight: 500px;
+        display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 30px;
+          background: #0E5B87;
+          height: 66px;
+          margin-bottom: 10px;
+    }
+    .navbar_logo{
+      width: 100px;
+      height: 30px;
+      margin-left: 5px;
+    }
+    .navbar_logo img {
+      width: 100px;
+      height: 30px;
+    }
+    .navbar1 a {
+      
+      font-size: 14px;
+      line-height: 20px;
+    }
+    .navbar1 {
+      gap: 100px;
+      padding-left: 0px;
+     margin-left: 0px;
+    }
+    .navbar1 ul{
+      padding-left: 25px;
+    }
+    .navbar2 ul{
+      padding-left: 25px;
+    }
+    
+    .navbar2{
+      margin-right: 0px;
+  }
+  .navbar2 a{
+      width: 40px;
+      height: 20px;
+      font-family: Roboto;
+      font-weight: 500px;
+      padding:10px;
+    }
+    li {
+      padding: 1px;
+  }
+  .wrapper{
+    margin: 0px 40px ;
+  }
+  .footer_content {
+    
+    gap: 30px;
+    padding: 40px 0px 0px 0px;
+    margin: 10px 20px 0px 5%;
+  }
+  .second_footer_content,
+  .third_footer_content {
+   
+    gap: 21px;
+    margin-left: 0px;
+  }
+  .arrow_up {
+    margin-left: 85%;
+    margin-top: -50px;
+    padding-bottom: 0px;
+  }
+
+  .collapsible label, .collapsible2 label, .collapsible3 label, .collapsible4 label, .collapsible5 label, .collapsible6 label, .collapsible7 label{
+    position: relative;
+    font-size: 16px;
+    padding: 10px 30px 20px 10px;
+  }
+
+  .collapsible_text, .collapsible_text2, .collapsible_text3, .collapsible_text4, .collapsible_text5, .collapsible_text6, .collapsible_text7{
+   font-size: 14px;
+  }
+  }
+
+  @media screen and (max-width: 618px) {
+    #navbar{
+      font-size: 12px;
+      font-weight: 500px;
+        display: flex;
+          align-items: center;
+          justify-content: center;
+          background: #0E5B87;
+          height: 66px;
+          margin-bottom: 10px;
+    }
+    .navbar_logo{
+      width: 100px;
+      height: 30px;
+      margin-left: 5px;
+    }
+    .navbar_logo img {
+      width: 100px;
+      height: 30px;
+    }
+    .navbar1 a {
+      
+      font-size: 12px;
+      line-height: 20px;
+    }
+    .navbar1 {
+      gap: 0px;
+      padding-left: 0px;
+     margin-left: 0px;
+    }
+    .navbar1 ul{
+      padding-left: 5px;
+    }
+    .navbar2 ul{
+      padding-left: 5px;
+    }
+    .navbar1 a {
+      color: #98D5F9;
+      text-decoration: none;
+      font-style: normal;
+      font-weight: 500px;
+      font-size: 10px;
+      line-height: 20px;
+      letter-spacing: 0.0015em;
+      font-family: Roboto;
+    }
+    .navbar2{
+      margin-right: 0px;
+  }
+  .navbar2 a{
+      width: 40px;
+      height: 20px;
+      font-family: Roboto;
+      font-weight: 500px;
+      padding:10px;
+    }
+    li {
+      padding: 1px;
+  }
+  .wrapper{
+    margin: 0px 40px ;
+  }
+  .footer_content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px 20px 0px 5px;
+  }
+  .second_footer_content,
+  .third_footer_content {
+    gap: 10px;
+    margin-left: 0px;
+  }
+  .arrow_up {
+    margin-left: 85%;
+    margin-top: -50px;
+    padding-bottom: 0px;
+  }
+
+  .collapsible label, .collapsible2 label, .collapsible3 label, .collapsible4 label, .collapsible5 label, .collapsible6 label, .collapsible7 label{
+    position: relative;
+    font-size: 16px;
+    padding: 10px 30px 20px 10px;
+  }
+
+  .collapsible_text, .collapsible_text2, .collapsible_text3, .collapsible_text4, .collapsible_text5, .collapsible_text6, .collapsible_text7{
+   font-size: 14px;
+  }
+  }
