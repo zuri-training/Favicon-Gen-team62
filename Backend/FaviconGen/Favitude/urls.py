@@ -1,6 +1,8 @@
 from django.urls import path
 from . import views
 
+app_name = "Favitude"
+
 urlpatterns = [
   path("", views.home, name="home_page"),
   path("about/", views.about, name="about_page"),
@@ -10,4 +12,5 @@ urlpatterns = [
   path("error/", views.error_page, name="error_page"),
   path("generate/", views.generate_page, name="generate_page"),
   path("imageGen/", views.imageGen_page, name="imageGen_page"),
+  path("documentation/", views.documentation_page, name="documentation_page"),
 ]

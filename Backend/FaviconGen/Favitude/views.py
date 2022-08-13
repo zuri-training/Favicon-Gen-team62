@@ -25,4 +25,7 @@ def generate_page(request):
   return render(request, 'Favitude/generate.html')
 
 def imageGen_page(request):
-  return render(request, 'Favitude/imageGen.html')            
+  return render(request, 'Favitude/imageGen.html')         
+
+def documentation_page(request):
+  return render(request, 'Favitude/documentation.html')   
