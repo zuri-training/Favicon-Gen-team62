@@ -18,17 +18,17 @@
             </div>
             <div class="navbar1">
                 <ul>
-                    <li><a href="./Frontend/generate page/generate_page.html">Generate</a></li>
-                    <li><a href="./Frontend/documentation/documentation.html">Documentation</a></li>
-                    <li><a href="./Frontend/tutorial/tutorial.html">Tutorials</a></li>
-                    <li><a href="./Frontend/about page/about_page.html">About</a></li>
+                    <li><a href="{% url 'Hill:generate_page' %}">Generate</a></li>
+                    <li><a href="{% url 'Hill:documentation_page' %}">Documentation</a></li>
+                    <li><a href="{% url 'Hill:tutorial_page' %}">Tutorials</a></li>
+                    <li><a href="{% url 'Hill:about_page' %}">About</a></li>
                 </ul>
             </div>
 
             <div class="navbar2">
                 <ul class="nav">
-                    <li><a class="login_button" href="./Frontend/log in page/login.html">Login</a></li>
-                    <li><a class="register_button" href="./Frontend/signup_page/signup.html">Register</a></li>
+                    <li><a class="login_button" href="{% url 'Hill:login_page' %}">Login</a></li>
+                    <li><a class="register_button" href="{% url 'Hill:signup_page' %}">Register</a></li>
                 </ul>
             </div>
 
@@ -42,7 +42,7 @@
             </div>
             
            <div class="getting_started">
-            <a id="button1" href="./Frontend/generate page/generate_page.html">Get Started</a>
+            <a id="button1" href="{% url 'Hill:generate_page' %}">Get Started</a>
            </div>
             
            
@@ -58,7 +58,7 @@
                 <p id="check"><img src="{% static 'images/images-home/check.png' %}" alt="">Download your Favicon in Zip format</p>
                 <p id="check"><img src="{% static 'images/images-home/check.png' %}" alt="">Import your preferred image for use</p>
                 <p id="check"><img src="{% static 'images/images-home/check.png' %}" alt="">One Favicon in Different resolutions </p>
-                <a href="./Frontend/tutorial/tutorial.html" id="button2">Learn More</a>
+                <a href="{% url 'Hill:tutorial_page' %}" id="button2">Learn More</a>
                 
             </div>
             <div class="image2">
@@ -77,7 +77,7 @@
                 </div>
             </div>
             <div class="third_bottom">
-                <h4>Want to know more about Favicons?  <a href="./Frontend/tutorial/tutorial.html" class="click_here">Click here</a></h4>
+                <h4>Want to know more about Favicons?  <a href="{% url 'Hill:tutorial_page' %}" class="click_here">Click here</a></h4>
             </div>
         </div>
         <hr>
@@ -86,13 +86,13 @@
             <h4>Generate Favicon</h4>
             <div class="buttons">
                 <div class="first_pair">
-                    <a href="./Frontend/generate from text/Gen_from_text.html"id="button3">Convert Texts</a>
+                    <a href="{% url 'Hill:gen_from_text_page' %}" id="button3">Convert Texts</a>
                     <p id="button_text1">Generate favicons from texts</p>
                     <a href=""id="button4">Download</a>
                     <p id="button_text2">Download/save your generated favicon</p>
                 </div>
                 <div class="second_pair">
-                    <a href="./Frontend/image_generate_page/image-gen.html" id="button5">Upload Image</a>
+                    <a href="{% url 'Hill:imageGen_page' %}" id="button5">Upload Image</a>
                     <p id="button_text3">Generate HTML/CSS link of your favicon</p>
                     <a href="" id="button6">Generate Link</a>
                     <p id="button_text4">Generate HTML/CSS link of your favicon</p>
@@ -120,17 +120,17 @@
             </div>
             <div class="second_footer_content">
                 <a href="#" id="standout_text">COMPANY</a>
-                <a href="./Frontend/about page/about_page.html">About us</a>
-                <a href="./Frontend/privacy_policy/privacy.html">Privacy Policy</a>
+                <a href="{% url 'Hill:about_page' %}">About us</a>
+                <a href="{% url 'Hill:privacy_page' %}">Privacy Policy</a>
                 <a href="#">Work with us</a>
                 <a href="#">Terms & Conditions</a>
             </div>
             <div class="third_footer_content">
                 <a href="#" id="standout_text">SUPPORT</a>
-                <a href="./Frontend/contact-us/contact-us.html">Contact us</a>
+                <a href="{% url 'Hill:contact_page' %}">Contact us</a>
                 <a href="#">FAQs</a>
-                <a href="./Frontend/tutorial/tutorial.html">Tutorials</a>
-                <a href="./Frontend/documentation/documentation.html">Documantation</a>
+                <a href="{% url 'Hill:tutorial_page' %}">Tutorials</a>
+                <a href="{% url 'Hill:documentation_page' %}">Documantation</a>
             </div>
         </div>
 

@@ -7,11 +7,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="{% static 'CSS/login.css' %}">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="{% static 'CSS/login.css' %}"
+    link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com" >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
 </head>
@@ -28,7 +28,7 @@
             <div id="div1d"><p id="p2">or Sign in with Email</p></div>
             <div id="div1e"></div>
         </div>
-       <form id="form" onsubmit="return check()" novalidate>
+       <form id="form" action="{% url 'Hill:login_page' %}" onsubmit="return check()" novalidate>
             <label for="Email"><p>Email Address</p> 
                 <input type="text" id="fmail" class="fields" placeholder="williamdoe@example.com" onkeyup="manageBtn(this)">
                 <div id="erroremail" class="emsg"></div>
@@ -47,12 +47,12 @@
                 <a href="" id="forgot">Forgot Password?</a>
             </div>
             <div>
-                <button class="btn">
-                    <a href="http://127.0.0.1:5500/index.html">Log In</a>
+                <button id="btnSubmit" class="submit" disabled>
+                    <a href="{% url 'Hill:login_page' %}">Log In</a>
                 </button>
             </div>
         </form>
-        <p id="p3">Not registered yet? <a href="http://127.0.0.1:5500/Frontend/signup_page/signup.html" id="create">Create an account</a></p>
+        <p id="p3">Not registered yet? <a href="{% url 'Hill:signup_page' %}" id="create">Create an account</a></p>
     </div>
 
     <script>

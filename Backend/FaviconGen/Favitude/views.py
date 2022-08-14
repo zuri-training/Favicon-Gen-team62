@@ -9,6 +9,7 @@ def about(request):
 
 
 def login_page(request):
+  
   return render(request, 'Favitude/login.html')
 
 
