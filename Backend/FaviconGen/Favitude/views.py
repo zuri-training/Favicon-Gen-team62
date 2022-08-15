@@ -11,6 +11,9 @@ def about(request):
 def login_page(request):
   
   return render(request, 'Favitude/login.html')
+def home_page(request):
+  
+  return render(request, 'Favitude/home.html')
 
 
 def signup_page(request):
