@@ -47,9 +47,11 @@
                 <a href="" id="forgot">Forgot Password?</a>
             </div>
             <div>
-                <button id="btnSubmit" class="submit" disabled>
-                    <a href="{% url 'Hill:login_page' %}">Log In</a>
-                </button>
+                <a href="{% url 'Hill:home_page' %}">
+                  <button id="btnSubmit" class="submit" disabled>
+                   Log In
+                  </button>
+                </a>
             </div>
         </form>
         <p id="p3">Not registered yet? <a href="{% url 'Hill:signup_page' %}" id="create">Create an account</a></p>
