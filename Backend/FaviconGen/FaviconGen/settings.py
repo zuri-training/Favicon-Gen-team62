@@ -1,3 +1,4 @@
+import django_heroku
 """
 Django settings for FaviconGen project.
 
@@ -156,3 +157,5 @@ STATICFILES_DIRS = ['./Favitude/static']
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
+#Activate django_heroku
+django_heroku.settings(locals())
